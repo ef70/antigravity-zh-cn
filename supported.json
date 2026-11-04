@@ -1,0 +1,17 @@
+{
+  "patchVersion": "2026.11.04.1",
+  "versions": {
+    "2.29.0": {
+      "original": {
+        "preload.js": "2f4348c24fa6feeba6fef81644603304667b43a446b3887370781e90ec37ca2c",
+        "ipcHandlers.js": "584770318464da504dfbaa2add454eff55e70418c8b0550145c55d2cb79818bb",
+        "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
+      },
+      "patched": {
+        "preload.js": "afba4293e76feb7b9a97cacbfea1a03cb8ae35edaeac9800a557697c9b819304",
+        "ipcHandlers.js": "d811156f5184f30c5bdfad7277d46a4f769a80c86f3d69fcd38d90bb783c79e3",
+        "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
+      }
+    }
+  }
+}

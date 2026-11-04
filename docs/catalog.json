@@ -1,0 +1,2404 @@
+{
+  "patchVersion": "2026.11.04.1",
+  "supportedVersions": [
+    "2.29.0"
+  ],
+  "counts": {
+    "entries": 457,
+    "uniqueEnglish": 438,
+    "dynamicRules": 21
+  },
+  "settingsRule": {
+    "pattern": "/^(\\d+) projects?$/",
+    "replacement": "$1 个项目"
+  },
+  "entries": [
+    {
+      "scope": "global",
+      "english": "Workspace",
+      "chinese": "工作区"
+    },
+    {
+      "scope": "global",
+      "english": "Local Checkout",
+      "chinese": "本地工作区"
+    },
+    {
+      "scope": "global",
+      "english": "Select Environment",
+      "chinese": "选择环境"
+    },
+    {
+      "scope": "global",
+      "english": "Good response",
+      "chinese": "回答不错"
+    },
+    {
+      "scope": "global",
+      "english": "Bad response",
+      "chinese": "回答不佳"
+    },
+    {
+      "scope": "global",
+      "english": "File",
+      "chinese": "文件"
+    },
+    {
+      "scope": "global",
+      "english": "View",
+      "chinese": "视图"
+    },
+    {
+      "scope": "global",
+      "english": "Window",
+      "chinese": "窗口"
+    },
+    {
+      "scope": "global",
+      "english": "Minimize",
+      "chinese": "最小化"
+    },
+    {
+      "scope": "global",
+      "english": "Maximize",
+      "chinese": "最大化"
+    },
+    {
+      "scope": "global",
+      "english": "Restore",
+      "chinese": "还原"
+    },
+    {
+      "scope": "global",
+      "english": "Unmaximize",
+      "chinese": "还原"
+    },
+    {
+      "scope": "global",
+      "english": "Zoom In",
+      "chinese": "放大"
+    },
+    {
+      "scope": "global",
+      "english": "Zoom Out",
+      "chinese": "缩小"
+    },
+    {
+      "scope": "global",
+      "english": "Reset Zoom",
+      "chinese": "重置缩放"
+    },
+    {
+      "scope": "global",
+      "english": "Create Project",
+      "chinese": "创建项目"
+    },
+    {
+      "scope": "global",
+      "english": "Quick Start",
+      "chinese": "快速开始"
+    },
+    {
+      "scope": "global",
+      "english": "Model",
+      "chinese": "模型"
+    },
+    {
+      "scope": "global",
+      "english": "Project",
+      "chinese": "项目"
+    },
+    {
+      "scope": "global",
+      "english": "Project Settings",
+      "chinese": "项目设置"
+    },
+    {
+      "scope": "global",
+      "english": "Select Project",
+      "chinese": "选择项目"
+    },
+    {
+      "scope": "global",
+      "english": "Select Model",
+      "chinese": "选择模型"
+    },
+    {
+      "scope": "global",
+      "english": "View Usage",
+      "chinese": "查看用量"
+    },
+    {
+      "scope": "global",
+      "english": "Refreshing...",
+      "chinese": "正在刷新……"
+    },
+    {
+      "scope": "global",
+      "english": "Refreshing…",
+      "chinese": "正在刷新……"
+    },
+    {
+      "scope": "global",
+      "english": "Medium",
+      "chinese": "中等"
+    },
+    {
+      "scope": "global",
+      "english": "Low",
+      "chinese": "低"
+    },
+    {
+      "scope": "global",
+      "english": "High",
+      "chinese": "高"
+    },
+    {
+      "scope": "global",
+      "english": "New",
+      "chinese": "新"
+    },
+    {
+      "scope": "global",
+      "english": "Notice",
+      "chinese": "提示"
+    },
+    {
+      "scope": "global",
+      "english": "GPT-OSS 120B (Medium)",
+      "chinese": "GPT-OSS 120B（中等）"
+    },
+    {
+      "scope": "global",
+      "english": "Auto (Preview)",
+      "chinese": "自动（预览）"
+    },
+    {
+      "scope": "global",
+      "english": "Every command requires approval.",
+      "chinese": "每条命令都需要批准。"
+    },
+    {
+      "scope": "global",
+      "english": "Ask before sensitive operations.",
+      "chinese": "敏感操作前询问。"
+    },
+    {
+      "scope": "global",
+      "english": "Automatically decide if commands run.",
+      "chinese": "自动判断是否执行命令。"
+    },
+    {
+      "scope": "global",
+      "english": "Run all commands without restrictions.",
+      "chinese": "不受限制地执行所有命令。"
+    },
+    {
+      "scope": "global",
+      "english": "Use Global Settings",
+      "chinese": "使用全局设置"
+    },
+    {
+      "scope": "global",
+      "english": "Extensions",
+      "chinese": "扩展"
+    },
+    {
+      "scope": "global",
+      "english": "Biomolecular Structure Viewer",
+      "chinese": "生物分子结构查看器"
+    },
+    {
+      "scope": "global",
+      "english": "Command Palette",
+      "chinese": "命令面板"
+    },
+    {
+      "scope": "global",
+      "english": "Version",
+      "chinese": "版本"
+    },
+    {
+      "scope": "global",
+      "english": "Check for Updates",
+      "chinese": "检查更新"
+    },
+    {
+      "scope": "global",
+      "english": "Open Antigravity IDE",
+      "chinese": "打开 Antigravity IDE"
+    },
+    {
+      "scope": "global",
+      "english": "Open in Antigravity IDE",
+      "chinese": "在 Antigravity IDE 中打开"
+    },
+    {
+      "scope": "global",
+      "english": "Agents",
+      "chinese": "智能体"
+    },
+    {
+      "scope": "global",
+      "english": "Click to Open Docs",
+      "chinese": "点击打开文档"
+    },
+    {
+      "scope": "global",
+      "english": "Send Message",
+      "chinese": "发送消息"
+    },
+    {
+      "scope": "global",
+      "english": "Record Audio",
+      "chinese": "录制音频"
+    },
+    {
+      "scope": "global",
+      "english": "Overview",
+      "chinese": "概览"
+    },
+    {
+      "scope": "global",
+      "english": "Review",
+      "chinese": "审阅"
+    },
+    {
+      "scope": "global",
+      "english": "Files",
+      "chinese": "文件"
+    },
+    {
+      "scope": "global",
+      "english": "Terminal",
+      "chinese": "终端"
+    },
+    {
+      "scope": "global",
+      "english": "Toggle Overview Panel",
+      "chinese": "显示或隐藏概览面板"
+    },
+    {
+      "scope": "global",
+      "english": "Rename",
+      "chinese": "重命名"
+    },
+    {
+      "scope": "global",
+      "english": "Pin",
+      "chinese": "置顶"
+    },
+    {
+      "scope": "global",
+      "english": "Unpin",
+      "chinese": "取消置顶"
+    },
+    {
+      "scope": "global",
+      "english": "Archive",
+      "chinese": "归档"
+    },
+    {
+      "scope": "global",
+      "english": "Split",
+      "chinese": "拆分"
+    },
+    {
+      "scope": "global",
+      "english": "Copy",
+      "chinese": "复制"
+    },
+    {
+      "scope": "global",
+      "english": "Split Right",
+      "chinese": "向右拆分"
+    },
+    {
+      "scope": "global",
+      "english": "Split Down",
+      "chinese": "向下拆分"
+    },
+    {
+      "scope": "global",
+      "english": "Replace with New",
+      "chinese": "替换为新对话"
+    },
+    {
+      "scope": "global",
+      "english": "Conversation Name",
+      "chinese": "对话名称"
+    },
+    {
+      "scope": "global",
+      "english": "Conversation ID",
+      "chinese": "对话 ID"
+    },
+    {
+      "scope": "global",
+      "english": "Project Name",
+      "chinese": "项目名称"
+    },
+    {
+      "scope": "global",
+      "english": "Copy Project Name",
+      "chinese": "复制项目名称"
+    },
+    {
+      "scope": "global",
+      "english": "Show in File Explorer",
+      "chinese": "在文件资源管理器中显示"
+    },
+    {
+      "scope": "global",
+      "english": "Delete Project",
+      "chinese": "删除项目"
+    },
+    {
+      "scope": "global",
+      "english": "Archive Conversation",
+      "chinese": "归档对话"
+    },
+    {
+      "scope": "global",
+      "english": "Pin Conversation",
+      "chinese": "置顶对话"
+    },
+    {
+      "scope": "global",
+      "english": "Unpin Conversation",
+      "chinese": "取消置顶对话"
+    },
+    {
+      "scope": "global",
+      "english": "Maximize Pane",
+      "chinese": "最大化面板"
+    },
+    {
+      "scope": "global",
+      "english": "Open File",
+      "chinese": "打开文件"
+    },
+    {
+      "scope": "global",
+      "english": "Search for content to open",
+      "chinese": "搜索要打开的内容"
+    },
+    {
+      "scope": "global",
+      "english": "Search tabs, files, extensions, subagents, artifacts, tasks...",
+      "chinese": "搜索标签页、文件、扩展、子智能体、产物、任务……"
+    },
+    {
+      "scope": "global",
+      "english": "Active",
+      "chinese": "进行中"
+    },
+    {
+      "scope": "global",
+      "english": "Idle",
+      "chinese": "空闲"
+    },
+    {
+      "scope": "global",
+      "english": "Updated",
+      "chinese": "更新于"
+    },
+    {
+      "scope": "global",
+      "english": "Toggle Auxiliary Pane",
+      "chinese": "显示或隐藏辅助面板"
+    },
+    {
+      "scope": "global",
+      "english": "Good Response",
+      "chinese": "回答不错"
+    },
+    {
+      "scope": "global",
+      "english": "Bad Response",
+      "chinese": "回答不佳"
+    },
+    {
+      "scope": "global",
+      "english": "Group By",
+      "chinese": "分组方式"
+    },
+    {
+      "scope": "global",
+      "english": "Sort Conversations",
+      "chinese": "对话排序"
+    },
+    {
+      "scope": "global",
+      "english": "Sort Projects",
+      "chinese": "项目排序"
+    },
+    {
+      "scope": "global",
+      "english": "Last Updated",
+      "chinese": "最近更新"
+    },
+    {
+      "scope": "global",
+      "english": "Last Prompt",
+      "chinese": "最近提问"
+    },
+    {
+      "scope": "global",
+      "english": "Custom Order",
+      "chinese": "自定义顺序"
+    },
+    {
+      "scope": "global",
+      "english": "Filter",
+      "chinese": "筛选"
+    },
+    {
+      "scope": "global",
+      "english": "Display",
+      "chinese": "显示"
+    },
+    {
+      "scope": "global",
+      "english": "Auto Pin",
+      "chinese": "自动置顶"
+    },
+    {
+      "scope": "global",
+      "english": "Archived Only",
+      "chinese": "仅显示已归档"
+    },
+    {
+      "scope": "global",
+      "english": "Mark All as Read",
+      "chinese": "全部标为已读"
+    },
+    {
+      "scope": "global",
+      "english": "Mark All As Read",
+      "chinese": "全部标为已读"
+    },
+    {
+      "scope": "global",
+      "english": "Mark Unread",
+      "chinese": "标为未读"
+    },
+    {
+      "scope": "global",
+      "english": "Mark Read",
+      "chinese": "标为已读"
+    },
+    {
+      "scope": "global",
+      "english": "Delete",
+      "chinese": "删除"
+    },
+    {
+      "scope": "global",
+      "english": "Status",
+      "chinese": "状态"
+    },
+    {
+      "scope": "global",
+      "english": "None",
+      "chinese": "无"
+    },
+    {
+      "scope": "global",
+      "english": "Plugins",
+      "chinese": "插件"
+    },
+    {
+      "scope": "global",
+      "english": "Last 7 days",
+      "chinese": "最近 7 天"
+    },
+    {
+      "scope": "global",
+      "english": "Subtitles",
+      "chinese": "副标题"
+    },
+    {
+      "scope": "global",
+      "english": "Worktree",
+      "chinese": "工作树"
+    },
+    {
+      "scope": "global",
+      "english": "General",
+      "chinese": "常规"
+    },
+    {
+      "scope": "global",
+      "english": "Account",
+      "chinese": "账户"
+    },
+    {
+      "scope": "global",
+      "english": "Permissions",
+      "chinese": "权限"
+    },
+    {
+      "scope": "global",
+      "english": "Appearance",
+      "chinese": "外观"
+    },
+    {
+      "scope": "global",
+      "english": "Models",
+      "chinese": "模型"
+    },
+    {
+      "scope": "global",
+      "english": "Customizations",
+      "chinese": "自定义"
+    },
+    {
+      "scope": "global",
+      "english": "Browser",
+      "chinese": "浏览器"
+    },
+    {
+      "scope": "global",
+      "english": "App",
+      "chinese": "应用"
+    },
+    {
+      "scope": "global",
+      "english": "Application",
+      "chinese": "应用"
+    },
+    {
+      "scope": "global",
+      "english": "Notifications",
+      "chinese": "通知"
+    },
+    {
+      "scope": "global",
+      "english": "Models & Usage",
+      "chinese": "模型与用量"
+    },
+    {
+      "scope": "global",
+      "english": "Plan",
+      "chinese": "套餐"
+    },
+    {
+      "scope": "global",
+      "english": "Model Credits",
+      "chinese": "模型点数"
+    },
+    {
+      "scope": "global",
+      "english": "Gemini Models",
+      "chinese": "Gemini 模型"
+    },
+    {
+      "scope": "global",
+      "english": "Claude and GPT models",
+      "chinese": "Claude 和 GPT 模型"
+    },
+    {
+      "scope": "global",
+      "english": "Weekly Limit Remaining",
+      "chinese": "每周剩余额度"
+    },
+    {
+      "scope": "global",
+      "english": "Five Hour Limit Remaining",
+      "chinese": "五小时剩余额度"
+    },
+    {
+      "scope": "global",
+      "english": "Gemini 4 Argon Weekly Limit",
+      "chinese": "Gemini 4 Argon 每周额度"
+    },
+    {
+      "scope": "global",
+      "english": "Prevent Sleep",
+      "chinese": "防止休眠"
+    },
+    {
+      "scope": "global",
+      "english": "Keep In Menu Bar",
+      "chinese": "保留在菜单栏"
+    },
+    {
+      "scope": "global",
+      "english": "Remote Control",
+      "chinese": "远程控制"
+    },
+    {
+      "scope": "global",
+      "english": "Enable Remote Control",
+      "chinese": "启用远程控制"
+    },
+    {
+      "scope": "global",
+      "english": "Device Name",
+      "chinese": "设备名称"
+    },
+    {
+      "scope": "global",
+      "english": "Notification Settings",
+      "chinese": "通知设置"
+    },
+    {
+      "scope": "global",
+      "english": "Open System Preferences",
+      "chinese": "打开系统设置"
+    },
+    {
+      "scope": "global",
+      "english": "Windows Subsystem for Linux",
+      "chinese": "Windows Linux 子系统"
+    },
+    {
+      "scope": "global",
+      "english": "Theme",
+      "chinese": "主题"
+    },
+    {
+      "scope": "global",
+      "english": "Contrast",
+      "chinese": "对比度"
+    },
+    {
+      "scope": "global",
+      "english": "Strong",
+      "chinese": "高对比度"
+    },
+    {
+      "scope": "global",
+      "english": "Light Theme",
+      "chinese": "浅色主题"
+    },
+    {
+      "scope": "global",
+      "english": "Preset",
+      "chinese": "预设"
+    },
+    {
+      "scope": "global",
+      "english": "Default Light",
+      "chinese": "默认浅色"
+    },
+    {
+      "scope": "global",
+      "english": "Background",
+      "chinese": "背景色"
+    },
+    {
+      "scope": "global",
+      "english": "Foreground",
+      "chinese": "前景色"
+    },
+    {
+      "scope": "global",
+      "english": "Accent",
+      "chinese": "强调色"
+    },
+    {
+      "scope": "global",
+      "english": "Dark Theme",
+      "chinese": "深色主题"
+    },
+    {
+      "scope": "global",
+      "english": "Default Dark",
+      "chinese": "默认深色"
+    },
+    {
+      "scope": "global",
+      "english": "Enable Notifications for Agent",
+      "chinese": "启用智能体通知"
+    },
+    {
+      "scope": "global",
+      "english": "Sound",
+      "chinese": "声音"
+    },
+    {
+      "scope": "global",
+      "english": "Enable Sounds for Agent",
+      "chinese": "启用智能体提示音"
+    },
+    {
+      "scope": "global",
+      "english": "Volume",
+      "chinese": "音量"
+    },
+    {
+      "scope": "global",
+      "english": "Enable AI Credit Overages",
+      "chinese": "启用 AI 点数超额使用"
+    },
+    {
+      "scope": "global",
+      "english": "Chat Settings",
+      "chinese": "对话设置"
+    },
+    {
+      "scope": "global",
+      "english": "Verbose Agent Chat",
+      "chinese": "显示智能体详细过程"
+    },
+    {
+      "scope": "global",
+      "english": "Conversation Width",
+      "chinese": "对话宽度"
+    },
+    {
+      "scope": "global",
+      "english": "Automations",
+      "chinese": "自动化"
+    },
+    {
+      "scope": "global",
+      "english": "Projects",
+      "chinese": "项目"
+    },
+    {
+      "scope": "global",
+      "english": "Not in Project",
+      "chinese": "未在项目中"
+    },
+    {
+      "scope": "global",
+      "english": "Conversations",
+      "chinese": "对话"
+    },
+    {
+      "scope": "global",
+      "english": "Conversation History",
+      "chinese": "对话历史"
+    },
+    {
+      "scope": "global",
+      "english": "Scheduled Tasks",
+      "chinese": "计划任务"
+    },
+    {
+      "scope": "global",
+      "english": "Shortcuts",
+      "chinese": "快捷键"
+    },
+    {
+      "scope": "global",
+      "english": "Provide Feedback",
+      "chinese": "提供反馈"
+    },
+    {
+      "scope": "global",
+      "english": "Give Feedback",
+      "chinese": "提供反馈"
+    },
+    {
+      "scope": "global",
+      "english": "Settings",
+      "chinese": "设置"
+    },
+    {
+      "scope": "global",
+      "english": "Show All",
+      "chinese": "显示全部"
+    },
+    {
+      "scope": "global",
+      "english": "Execution",
+      "chinese": "执行"
+    },
+    {
+      "scope": "global",
+      "english": "Queued Messages",
+      "chinese": "排队消息"
+    },
+    {
+      "scope": "global",
+      "english": "Queue After Turn",
+      "chinese": "当前轮次后发送"
+    },
+    {
+      "scope": "global",
+      "english": "Send Immediately",
+      "chinese": "立即发送"
+    },
+    {
+      "scope": "global",
+      "english": "Agent Settings",
+      "chinese": "智能体设置"
+    },
+    {
+      "scope": "global",
+      "english": "Agent Behavior",
+      "chinese": "智能体行为"
+    },
+    {
+      "scope": "global",
+      "english": "Security Preset",
+      "chinese": "安全预设"
+    },
+    {
+      "scope": "global",
+      "english": "Default",
+      "chinese": "默认"
+    },
+    {
+      "scope": "global",
+      "english": "Full Machine",
+      "chinese": "整机权限"
+    },
+    {
+      "scope": "global",
+      "english": "Full machine",
+      "chinese": "整机权限"
+    },
+    {
+      "scope": "global",
+      "english": "Turbo Mode",
+      "chinese": "极速模式"
+    },
+    {
+      "scope": "global",
+      "english": "Turbo mode",
+      "chinese": "极速模式"
+    },
+    {
+      "scope": "global",
+      "english": "Custom",
+      "chinese": "自定义"
+    },
+    {
+      "scope": "global",
+      "english": "Disabled",
+      "chinese": "已禁用"
+    },
+    {
+      "scope": "global",
+      "english": "Request Review",
+      "chinese": "请求确认"
+    },
+    {
+      "scope": "global",
+      "english": "Always Ask",
+      "chinese": "始终询问"
+    },
+    {
+      "scope": "global",
+      "english": "Always Proceed",
+      "chinese": "始终继续"
+    },
+    {
+      "scope": "global",
+      "english": "Artifact Review Policy",
+      "chinese": "产物审阅策略"
+    },
+    {
+      "scope": "global",
+      "english": "Enable Telemetry",
+      "chinese": "启用遥测"
+    },
+    {
+      "scope": "global",
+      "english": "Marketing Emails",
+      "chinese": "营销邮件"
+    },
+    {
+      "scope": "global",
+      "english": "Your Plan: Antigravity Starter Quota",
+      "chinese": "你的套餐：Antigravity 基础配额"
+    },
+    {
+      "scope": "global",
+      "english": "Email",
+      "chinese": "电子邮箱"
+    },
+    {
+      "scope": "global",
+      "english": "Upgrade",
+      "chinese": "升级套餐"
+    },
+    {
+      "scope": "global",
+      "english": "Sign Out",
+      "chinese": "退出登录"
+    },
+    {
+      "scope": "global",
+      "english": "Terms of Service",
+      "chinese": "服务条款"
+    },
+    {
+      "scope": "global",
+      "english": "Browser Javascript Execution Policy",
+      "chinese": "浏览器 JavaScript 执行策略"
+    },
+    {
+      "scope": "global",
+      "english": "Browser JavaScript Execution Policy",
+      "chinese": "浏览器 JavaScript 执行策略"
+    },
+    {
+      "scope": "global",
+      "english": "Actuation Permissions",
+      "chinese": "执行权限"
+    },
+    {
+      "scope": "global",
+      "english": "Browser Actuation Rules",
+      "chinese": "浏览器执行规则"
+    },
+    {
+      "scope": "global",
+      "english": "Local Permissions",
+      "chinese": "本地权限"
+    },
+    {
+      "scope": "global",
+      "english": "File Permissions",
+      "chinese": "文件权限"
+    },
+    {
+      "scope": "global",
+      "english": "File Access Rules",
+      "chinese": "文件访问规则"
+    },
+    {
+      "scope": "global",
+      "english": "Network Access Rules",
+      "chinese": "网络访问规则"
+    },
+    {
+      "scope": "global",
+      "english": "Terminal Commands",
+      "chinese": "终端命令"
+    },
+    {
+      "scope": "global",
+      "english": "Commands Outside Sandbox",
+      "chinese": "沙盒外命令"
+    },
+    {
+      "scope": "global",
+      "english": "MCP Tools",
+      "chinese": "MCP 工具"
+    },
+    {
+      "scope": "global",
+      "english": "Mcp Tools",
+      "chinese": "MCP 工具"
+    },
+    {
+      "scope": "global",
+      "english": "Folders",
+      "chinese": "文件夹"
+    },
+    {
+      "scope": "global",
+      "english": "Add Folder",
+      "chinese": "添加文件夹"
+    },
+    {
+      "scope": "global",
+      "english": "Permission Settings",
+      "chinese": "权限设置"
+    },
+    {
+      "scope": "global",
+      "english": "Global Permissions",
+      "chinese": "全局权限"
+    },
+    {
+      "scope": "global",
+      "english": "Permission Preset",
+      "chinese": "权限预设"
+    },
+    {
+      "scope": "global",
+      "english": "Tool Permissions",
+      "chinese": "工具权限"
+    },
+    {
+      "scope": "global",
+      "english": "Inherit Global",
+      "chinese": "继承全局设置"
+    },
+    {
+      "scope": "global",
+      "english": "Plan Review Policy",
+      "chinese": "计划审阅策略"
+    },
+    {
+      "scope": "global",
+      "english": "Queue",
+      "chinese": "排队"
+    },
+    {
+      "scope": "global",
+      "english": "Keyboard shortcuts",
+      "chinese": "快捷键"
+    },
+    {
+      "scope": "global",
+      "english": "Rules",
+      "chinese": "规则"
+    },
+    {
+      "scope": "global",
+      "english": "Skills",
+      "chinese": "技能"
+    },
+    {
+      "scope": "global",
+      "english": "Other Customizations",
+      "chinese": "其他自定义"
+    },
+    {
+      "scope": "global",
+      "english": "Subagents",
+      "chinese": "子智能体"
+    },
+    {
+      "scope": "global",
+      "english": "Global",
+      "chinese": "全局"
+    },
+    {
+      "scope": "global",
+      "english": "Open",
+      "chinese": "打开"
+    },
+    {
+      "scope": "global",
+      "english": "Close",
+      "chinese": "关闭"
+    },
+    {
+      "scope": "global",
+      "english": "Cancel",
+      "chinese": "取消"
+    },
+    {
+      "scope": "global",
+      "english": "Save",
+      "chinese": "保存"
+    },
+    {
+      "scope": "global",
+      "english": "Done",
+      "chinese": "完成"
+    },
+    {
+      "scope": "global",
+      "english": "Apply",
+      "chinese": "应用"
+    },
+    {
+      "scope": "global",
+      "english": "Reset",
+      "chinese": "重置"
+    },
+    {
+      "scope": "global",
+      "english": "Browse",
+      "chinese": "浏览"
+    },
+    {
+      "scope": "global",
+      "english": "Edit",
+      "chinese": "编辑"
+    },
+    {
+      "scope": "global",
+      "english": "Retry",
+      "chinese": "重试"
+    },
+    {
+      "scope": "global",
+      "english": "Dismiss",
+      "chinese": "忽略"
+    },
+    {
+      "scope": "global",
+      "english": "Copy debug info",
+      "chinese": "复制调试信息"
+    },
+    {
+      "scope": "global",
+      "english": "Open IDE",
+      "chinese": "打开 IDE"
+    },
+    {
+      "scope": "global",
+      "english": "Display Options",
+      "chinese": "显示选项"
+    },
+    {
+      "scope": "global",
+      "english": "Create New Project",
+      "chinese": "新建项目"
+    },
+    {
+      "scope": "global",
+      "english": "Project options",
+      "chinese": "项目选项"
+    },
+    {
+      "scope": "global",
+      "english": "New Conversation in Project",
+      "chinese": "在项目中新建对话"
+    },
+    {
+      "scope": "global",
+      "english": "More options",
+      "chinese": "更多选项"
+    },
+    {
+      "scope": "global",
+      "english": "Pin conversation",
+      "chinese": "置顶对话"
+    },
+    {
+      "scope": "global",
+      "english": "Archive conversation",
+      "chinese": "归档对话"
+    },
+    {
+      "scope": "global",
+      "english": "More actions",
+      "chinese": "更多操作"
+    },
+    {
+      "scope": "global",
+      "english": "Message input",
+      "chinese": "消息输入框"
+    },
+    {
+      "scope": "global",
+      "english": "Ask anything, @ to mention, / for actions",
+      "chinese": "输入问题，@提及，/使用操作"
+    },
+    {
+      "scope": "global",
+      "english": "Add context",
+      "chinese": "添加上下文"
+    },
+    {
+      "scope": "global",
+      "english": "Turbo",
+      "chinese": "极速"
+    },
+    {
+      "scope": "global",
+      "english": "Local",
+      "chinese": "本地"
+    },
+    {
+      "scope": "global",
+      "english": "Record voice memo",
+      "chinese": "录制语音备忘"
+    },
+    {
+      "scope": "global",
+      "english": "Send message",
+      "chinese": "发送消息"
+    },
+    {
+      "scope": "global",
+      "english": "Toggle Sidebar",
+      "chinese": "切换侧边栏"
+    },
+    {
+      "scope": "global",
+      "english": "Go Back",
+      "chinese": "后退"
+    },
+    {
+      "scope": "global",
+      "english": "Go Forward",
+      "chinese": "前进"
+    },
+    {
+      "scope": "global",
+      "english": "Search Conversations",
+      "chinese": "搜索对话"
+    },
+    {
+      "scope": "global",
+      "english": "Typeahead menu",
+      "chinese": "搜索建议菜单"
+    },
+    {
+      "scope": "global",
+      "english": "Outside of Project",
+      "chinese": "项目外"
+    },
+    {
+      "scope": "global",
+      "english": "No Project",
+      "chinese": "无项目"
+    },
+    {
+      "scope": "global",
+      "english": "Select Agent",
+      "chinese": "选择智能体"
+    },
+    {
+      "scope": "global",
+      "english": "Main Agent",
+      "chinese": "主智能体"
+    },
+    {
+      "scope": "global",
+      "english": "New Conversation",
+      "chinese": "新建对话"
+    },
+    {
+      "scope": "global",
+      "english": "New Project",
+      "chinese": "新建项目"
+    },
+    {
+      "scope": "global",
+      "english": "No conversations yet",
+      "chinese": "暂无对话"
+    },
+    {
+      "scope": "global",
+      "english": "global settings",
+      "chinese": "全局设置"
+    },
+    {
+      "scope": "global",
+      "english": "Learn more",
+      "chinese": "了解更多"
+    },
+    {
+      "scope": "global",
+      "english": "Learn more.",
+      "chinese": "了解更多。"
+    },
+    {
+      "scope": "global",
+      "english": "Manage your plan, credentials, and general preferences.",
+      "chinese": "管理你的套餐、登录凭据和常规偏好设置。"
+    },
+    {
+      "scope": "global",
+      "english": "Manage Antigravity app settings.",
+      "chinese": "管理 Antigravity 应用设置。"
+    },
+    {
+      "scope": "global",
+      "english": "Prevent the computer from sleeping while the app is running.",
+      "chinese": "应用运行时防止电脑进入休眠。"
+    },
+    {
+      "scope": "global",
+      "english": "Keep the app accessible from the menu bar and running in the background when all windows are closed.",
+      "chinese": "关闭所有窗口后，仍可从菜单栏访问应用并让其在后台运行。"
+    },
+    {
+      "scope": "global",
+      "english": "Work with local agents from another device.",
+      "chinese": "从其他设备使用本地智能体。"
+    },
+    {
+      "scope": "global",
+      "english": "Scan the code to open this device in Remote Control, or copy link.",
+      "chinese": "扫描二维码以在远程控制中打开此设备，或复制链接。"
+    },
+    {
+      "scope": "global",
+      "english": "To modify notification settings, open your operating system's system preferences.",
+      "chinese": "如需修改通知设置，请打开操作系统的系统设置。"
+    },
+    {
+      "scope": "global",
+      "english": "Run the app against a Linux environment. Connecting relaunches the app into the selected WSL distro.",
+      "chinese": "在 Linux 环境中运行应用。连接后，应用将在所选 WSL 发行版中重新启动。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure the agent's visual theme and display preferences.",
+      "chinese": "配置智能体的视觉主题和显示偏好。"
+    },
+    {
+      "scope": "global",
+      "english": "Manage your notification preferences.",
+      "chinese": "管理通知偏好。"
+    },
+    {
+      "scope": "global",
+      "english": "Show system notifications when your action is needed or the agent finishes.",
+      "chinese": "需要你操作或智能体完成任务时显示系统通知。"
+    },
+    {
+      "scope": "global",
+      "english": "Play a sound when your action is needed or the agent finishes.",
+      "chinese": "需要你操作或智能体完成任务时播放提示音。"
+    },
+    {
+      "scope": "global",
+      "english": "Set the volume of agent sounds.",
+      "chinese": "设置智能体提示音音量。"
+    },
+    {
+      "scope": "global",
+      "english": "Display and preserve intermediate thinking steps.",
+      "chinese": "显示并保留中间思考步骤。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure the maximum width of the conversation panel.",
+      "chinese": "设置对话面板的最大宽度。"
+    },
+    {
+      "scope": "global",
+      "english": "Manage your model quota and credits.",
+      "chinese": "管理模型配额和 AI 点数。"
+    },
+    {
+      "scope": "global",
+      "english": "Your Plan: Google AI Pro",
+      "chinese": "你的套餐：Google AI Pro"
+    },
+    {
+      "scope": "global",
+      "english": "You can upgrade to a Google AI Ultra plan to receive higher rate limits.",
+      "chinese": "可升级到 Google AI Ultra 套餐以获得更高的速率限制。"
+    },
+    {
+      "scope": "global",
+      "english": "When toggled on, Antigravity will use your AI credits to fulfill model requests once you're out of model quota. Antigravity will always use your model quota first before using AI credits.",
+      "chinese": "开启后，当模型配额用尽时，Antigravity 会使用你的 AI 点数完成模型请求；使用 AI 点数前会始终优先使用模型配额。"
+    },
+    {
+      "scope": "global",
+      "english": "Manage project folders, agent settings, and permissions.",
+      "chinese": "管理项目文件夹、智能体设置和权限。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure agent execution, queued message delivery, and permissions.",
+      "chinese": "配置智能体执行、排队消息发送和权限。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure global allowed and denied resource permissions.",
+      "chinese": "配置全局允许和拒绝的资源权限。"
+    },
+    {
+      "scope": "global",
+      "english": "Also includes Global Permissions when working in this project.",
+      "chinese": "在此项目中工作时，同时包含全局权限。"
+    },
+    {
+      "scope": "global",
+      "english": "Controls the actions the agent can take.",
+      "chinese": "控制智能体可以执行的操作。"
+    },
+    {
+      "scope": "global",
+      "english": "Modify permissions for file, terminal, and MCP tools.",
+      "chinese": "修改文件、终端和 MCP 工具的权限。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure external tools via Model Context Protocol.",
+      "chinese": "通过模型上下文协议配置外部工具。"
+    },
+    {
+      "scope": "global",
+      "english": "Whether the agent asks you to review its documents.",
+      "chinese": "设置智能体是否请你审阅它生成的文档。"
+    },
+    {
+      "scope": "global",
+      "english": "Type / and select plan to have the agent generate a plan.",
+      "chinese": "输入 / 并选择“计划”，让智能体生成执行计划。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure the browser subagent. It requires Google Chrome to be installed. The browser subagent can be invoked by typing /browser in the conversation input box.",
+      "chinese": "配置浏览器子智能体。需要安装 Google Chrome。在对话输入框中输入 /browser 即可调用浏览器子智能体。"
+    },
+    {
+      "scope": "global",
+      "english": "Queue until after the current turn.",
+      "chinese": "当前轮次结束后发送。"
+    },
+    {
+      "scope": "global",
+      "english": "Interrupt the agent and send immediately.",
+      "chinese": "中断智能体并立即发送。"
+    },
+    {
+      "scope": "global",
+      "english": "Loading token usage...",
+      "chinese": "正在加载 token 用量……"
+    },
+    {
+      "scope": "global",
+      "english": "Loading workspace customizations...",
+      "chinese": "正在加载工作区自定义内容……"
+    },
+    {
+      "scope": "global",
+      "english": "The breakdown below shows token usage from customizations like rules, skills, and MCP. If a budget is exceeded, large rules are demoted to path pointers and large customizations are excluded automatically.",
+      "chinese": "下方显示规则、技能和 MCP 等自定义内容的 token 用量。超出预算时，较大的规则会降级为路径指针，较大的自定义内容会自动排除。"
+    },
+    {
+      "scope": "global",
+      "english": "Customization token budget exceeded. Large customizations are excluded from context.",
+      "chinese": "自定义 token 预算已超出。较大的自定义内容已从上下文中排除。"
+    },
+    {
+      "scope": "global",
+      "english": "When toggled on, Antigravity collects usage data to help Google enhance performance and features.",
+      "chinese": "开启后，Antigravity 会收集使用数据，以帮助 Google 改进性能和功能。"
+    },
+    {
+      "scope": "global",
+      "english": "Receive product updates, tips, and promotions from Google Antigravity via email.",
+      "chinese": "通过电子邮件接收 Google Antigravity 的产品更新、使用技巧和促销信息。"
+    },
+    {
+      "scope": "global",
+      "english": "Free users and Google AI Plus users receive the minimum base limits on Antigravity. You can upgrade to Google AI Pro or above to receive higher rate limits.",
+      "chinese": "免费用户和 Google AI Plus 用户可获得 Antigravity 的最低基础限额。升级到 Google AI Pro 或更高套餐可获得更高的使用频率限制。"
+    },
+    {
+      "scope": "global",
+      "english": "By using this app, you agree to its",
+      "chinese": "使用此应用即表示你同意其"
+    },
+    {
+      "scope": "global",
+      "english": "Configure when follow-up messages are sent.",
+      "chinese": "设置后续消息何时发送。"
+    },
+    {
+      "scope": "global",
+      "english": "Agent settings and permissions for conversations outside of projects.",
+      "chinese": "用于项目外对话的智能体设置和权限。"
+    },
+    {
+      "scope": "global",
+      "english": "Choose a predefined security preset for the agent. This controls terminal auto-execution policy, and file access policy.",
+      "chinese": "为智能体选择预设安全策略。此设置会控制终端自动执行策略和文件访问策略。"
+    },
+    {
+      "scope": "global",
+      "english": "Learn more about Default",
+      "chinese": "了解默认模式"
+    },
+    {
+      "scope": "global",
+      "english": "Learn more about Turbo mode",
+      "chinese": "了解极速模式"
+    },
+    {
+      "scope": "global",
+      "english": "Requires manual review for all terminal commands and file accesses outside of the working folders.",
+      "chinese": "所有终端命令以及工作文件夹外的文件访问都需要人工确认。"
+    },
+    {
+      "scope": "global",
+      "english": "All terminal commands require review. The agent can read or write to any file in the machine.",
+      "chinese": "所有终端命令都需要确认。智能体可以读写这台电脑上的任意文件。"
+    },
+    {
+      "scope": "global",
+      "english": "Disables all safety barriers for maximal iteration velocity.",
+      "chinese": "关闭所有安全限制，以获得最快的迭代速度。"
+    },
+    {
+      "scope": "global",
+      "english": "Manually customize individual settings.",
+      "chinese": "手动自定义各项设置。"
+    },
+    {
+      "scope": "global",
+      "english": "Specifies Agent's behavior when asking for review on artifacts, which are documents it creates to enable a richer conversation experience.",
+      "chinese": "指定智能体在请求审阅其创建的产物时的行为，这些产物用于提供更丰富的对话体验。"
+    },
+    {
+      "scope": "global",
+      "english": "Controls whether the agent can run custom JavaScript to automate complex browser actions.",
+      "chinese": "控制智能体是否可以运行自定义 JavaScript 来自动执行复杂的浏览器操作。"
+    },
+    {
+      "scope": "global",
+      "english": "Block all browser JavaScript execution.",
+      "chinese": "阻止所有浏览器 JavaScript 执行。"
+    },
+    {
+      "scope": "global",
+      "english": "Prompt for approval before running browser scripts.",
+      "chinese": "运行浏览器脚本前请求批准。"
+    },
+    {
+      "scope": "global",
+      "english": "Allow full browser script execution without prompting.",
+      "chinese": "允许完整执行浏览器脚本，不再提示。"
+    },
+    {
+      "scope": "global",
+      "english": "Inherits from global settings. Local permissions have higher priority. Learn more.",
+      "chinese": "继承自全局设置。本地权限的优先级更高。了解更多。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure allowed and denied paths for file reads and writes.",
+      "chinese": "配置允许或拒绝读写的文件路径。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure allowed and denied URLs for reading.",
+      "chinese": "配置允许或拒绝读取的网址。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure allowed terminal commands.",
+      "chinese": "配置允许执行的终端命令。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure allowed commands outside the sandbox.",
+      "chinese": "配置允许在沙盒外执行的命令。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure allowed and denied URLs for browser actions.",
+      "chinese": "配置允许或拒绝执行浏览器操作的网址。"
+    },
+    {
+      "scope": "global",
+      "english": "Configure allowed and denied URLs for browser actuation.",
+      "chinese": "配置允许或拒绝执行浏览器操作的网址。"
+    },
+    {
+      "scope": "settings",
+      "english": "Modified in Outside of Project",
+      "chinese": "已在项目外对话中修改"
+    },
+    {
+      "scope": "settings",
+      "english": "Built-in Browser",
+      "chinese": "内置浏览器"
+    },
+    {
+      "scope": "settings",
+      "english": "Configure link opening and built-in browser preferences.",
+      "chinese": "设置链接打开方式和内置浏览器偏好。"
+    },
+    {
+      "scope": "settings",
+      "english": "Open Links In",
+      "chinese": "链接打开方式"
+    },
+    {
+      "scope": "settings",
+      "english": "Choose where links open by default when clicked.",
+      "chinese": "选择点击链接时默认使用的浏览器。"
+    },
+    {
+      "scope": "settings",
+      "english": "External Browser",
+      "chinese": "外部浏览器"
+    },
+    {
+      "scope": "settings",
+      "english": "Download Location",
+      "chinese": "下载位置"
+    },
+    {
+      "scope": "settings",
+      "english": "Folder where files downloaded in the built-in browser are saved.",
+      "chinese": "内置浏览器下载文件的保存文件夹。"
+    },
+    {
+      "scope": "settings",
+      "english": "Change…",
+      "chinese": "更改……"
+    },
+    {
+      "scope": "settings",
+      "english": "Browsing History",
+      "chinese": "浏览历史"
+    },
+    {
+      "scope": "settings",
+      "english": "Clear visited URLs and autocomplete suggestions from the built-in browser.",
+      "chinese": "清除内置浏览器访问过的网址和自动补全建议。"
+    },
+    {
+      "scope": "settings",
+      "english": "Clear",
+      "chinese": "清除"
+    },
+    {
+      "scope": "settings",
+      "english": "Browser Subagent",
+      "chinese": "浏览器子智能体"
+    },
+    {
+      "scope": "settings",
+      "english": "Voice mode",
+      "chinese": "语音模式"
+    },
+    {
+      "scope": "settings",
+      "english": "Microphone",
+      "chinese": "麦克风"
+    },
+    {
+      "scope": "settings",
+      "english": "Input device for voice mode and dictation.",
+      "chinese": "语音模式和听写使用的输入设备。"
+    },
+    {
+      "scope": "settings",
+      "english": "System default",
+      "chinese": "系统默认"
+    },
+    {
+      "scope": "settings",
+      "english": "No folders added yet.",
+      "chinese": "尚未添加文件夹。"
+    },
+    {
+      "scope": "settings",
+      "english": "to be installed. The browser subagent can be invoked by typing /browser in the conversation input box.",
+      "chinese": "。在对话输入框中输入 /browser 即可调用浏览器子智能体。"
+    },
+    {
+      "scope": "settings",
+      "english": "Modified in",
+      "chinese": "已在"
+    },
+    {
+      "scope": "settings",
+      "english": "Also includes",
+      "chinese": "同时包含"
+    },
+    {
+      "scope": "settings",
+      "english": "when working",
+      "chinese": "用于"
+    },
+    {
+      "scope": "settings",
+      "english": "in these conversations",
+      "chinese": "这些对话"
+    },
+    {
+      "scope": "settings",
+      "english": "projects",
+      "chinese": "个项目中修改"
+    },
+    {
+      "scope": "settings",
+      "english": "project",
+      "chinese": "个项目中修改"
+    },
+    {
+      "scope": "settings",
+      "english": "Type",
+      "chinese": "输入"
+    },
+    {
+      "scope": "settings",
+      "english": "and select",
+      "chinese": "并选择"
+    },
+    {
+      "scope": "settings",
+      "english": "to have the agent generate a plan.",
+      "chinese": "让智能体生成计划。"
+    },
+    {
+      "scope": "settings",
+      "english": "Configure the browser subagent. It requires",
+      "chinese": "配置浏览器子智能体。需要安装"
+    },
+    {
+      "scope": "settings",
+      "english": "to be installed.",
+      "chinese": "后才能使用。"
+    },
+    {
+      "scope": "settings",
+      "english": "The browser subagent can be invoked by typing /browser in the conversation input box.",
+      "chinese": "在对话输入框中输入 /browser 即可调用浏览器子智能体。"
+    },
+    {
+      "scope": "settings",
+      "english": "copy link",
+      "chinese": "复制链接"
+    },
+    {
+      "scope": "settings",
+      "english": "Scan the code to open this device in Remote Control, or",
+      "chinese": "扫描二维码以在远程控制中打开此设备，或"
+    },
+    {
+      "scope": "settings",
+      "english": "Enter device name...",
+      "chinese": "输入设备名称……"
+    },
+    {
+      "scope": "settings",
+      "english": "Show Remote Control QR code",
+      "chinese": "显示远程控制二维码"
+    },
+    {
+      "scope": "settings",
+      "english": "Remote Control link",
+      "chinese": "远程控制链接"
+    },
+    {
+      "scope": "settings",
+      "english": "Connect",
+      "chinese": "连接"
+    },
+    {
+      "scope": "settings",
+      "english": "App version",
+      "chinese": "应用版本"
+    },
+    {
+      "scope": "settings",
+      "english": "Advanced Settings",
+      "chinese": "高级设置"
+    },
+    {
+      "scope": "settings",
+      "english": "System",
+      "chinese": "跟随系统"
+    },
+    {
+      "scope": "settings",
+      "english": "Light",
+      "chinese": "浅色"
+    },
+    {
+      "scope": "settings",
+      "english": "Dark",
+      "chinese": "深色"
+    },
+    {
+      "scope": "settings",
+      "english": "Narrow",
+      "chinese": "窄"
+    },
+    {
+      "scope": "settings",
+      "english": "Wide",
+      "chinese": "宽"
+    },
+    {
+      "scope": "settings",
+      "english": "Chime volume",
+      "chinese": "提示音音量"
+    },
+    {
+      "scope": "settings",
+      "english": "Your Plan:",
+      "chinese": "你的套餐："
+    },
+    {
+      "scope": "settings",
+      "english": "Model Quota",
+      "chinese": "模型配额"
+    },
+    {
+      "scope": "settings",
+      "english": "Refresh quota and credits data",
+      "chinese": "刷新配额和点数数据"
+    },
+    {
+      "scope": "settings",
+      "english": "Automatic Check for Updates",
+      "chinese": "自动检查更新"
+    },
+    {
+      "scope": "settings",
+      "english": "Automatically prompt you to restart the app when a new update is available. When disabled, you can check for updates manually from the app menu.",
+      "chinese": "有新版本可用时，自动提示你重启应用。关闭后，你仍可从应用菜单中手动检查更新。"
+    },
+    {
+      "scope": "settings",
+      "english": "Keyboard shortcuts for quick navigation and control.",
+      "chinese": "用于快速导航和操作的键盘快捷键。"
+    },
+    {
+      "scope": "settings",
+      "english": "RECOMMENDED",
+      "chinese": "推荐"
+    },
+    {
+      "scope": "settings",
+      "english": "Recommended",
+      "chinese": "推荐"
+    },
+    {
+      "scope": "settings",
+      "english": "recommended",
+      "chinese": "推荐"
+    },
+    {
+      "scope": "settings",
+      "english": "NAVIGATION",
+      "chinese": "导航"
+    },
+    {
+      "scope": "settings",
+      "english": "Navigation",
+      "chinese": "导航"
+    },
+    {
+      "scope": "settings",
+      "english": "navigation",
+      "chinese": "导航"
+    },
+    {
+      "scope": "settings",
+      "english": "CONVERSATION",
+      "chinese": "对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Conversation",
+      "chinese": "对话"
+    },
+    {
+      "scope": "settings",
+      "english": "conversation",
+      "chinese": "对话"
+    },
+    {
+      "scope": "settings",
+      "english": "LAYOUT CONTROLS",
+      "chinese": "布局控制"
+    },
+    {
+      "scope": "settings",
+      "english": "Layout Controls",
+      "chinese": "布局控制"
+    },
+    {
+      "scope": "settings",
+      "english": "Layout controls",
+      "chinese": "布局控制"
+    },
+    {
+      "scope": "settings",
+      "english": "layout controls",
+      "chinese": "布局控制"
+    },
+    {
+      "scope": "settings",
+      "english": "Open Conversation Picker",
+      "chinese": "打开对话选择器"
+    },
+    {
+      "scope": "settings",
+      "english": "Open File Search",
+      "chinese": "打开文件搜索"
+    },
+    {
+      "scope": "settings",
+      "english": "Focus Input",
+      "chinese": "聚焦输入框"
+    },
+    {
+      "scope": "settings",
+      "english": "File Picker",
+      "chinese": "文件选择器"
+    },
+    {
+      "scope": "settings",
+      "english": "New Tab",
+      "chinese": "新建标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Select Previous Conversation",
+      "chinese": "选择上一个对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Select Next Conversation",
+      "chinese": "选择下一个对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Previous Pane Tab",
+      "chinese": "上一个面板标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Next Pane Tab",
+      "chinese": "下一个面板标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Open Settings",
+      "chinese": "打开设置"
+    },
+    {
+      "scope": "settings",
+      "english": "Toggle Model Selector",
+      "chinese": "切换模型选择器"
+    },
+    {
+      "scope": "settings",
+      "english": "Toggle Voice Recording",
+      "chinese": "开始或停止录音"
+    },
+    {
+      "scope": "settings",
+      "english": "Find in Pane",
+      "chinese": "在面板中查找"
+    },
+    {
+      "scope": "settings",
+      "english": "Add to Chat/Quote",
+      "chinese": "添加到对话或引用"
+    },
+    {
+      "scope": "settings",
+      "english": "Archive This Conversation",
+      "chinese": "归档当前对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Toggle Maximize Auxiliary Pane",
+      "chinese": "切换辅助面板最大化"
+    },
+    {
+      "scope": "settings",
+      "english": "Toggle Terminal",
+      "chinese": "显示或隐藏终端"
+    },
+    {
+      "scope": "settings",
+      "english": "Feedback Type",
+      "chinese": "反馈类型"
+    },
+    {
+      "scope": "settings",
+      "english": "Bug Report",
+      "chinese": "问题报告"
+    },
+    {
+      "scope": "settings",
+      "english": "Feature Request",
+      "chinese": "功能建议"
+    },
+    {
+      "scope": "settings",
+      "english": "Auth and Billing",
+      "chinese": "登录与计费"
+    },
+    {
+      "scope": "settings",
+      "english": "Remote Control Issue",
+      "chinese": "远程控制问题"
+    },
+    {
+      "scope": "settings",
+      "english": "General Feedback",
+      "chinese": "一般反馈"
+    },
+    {
+      "scope": "settings",
+      "english": "Description",
+      "chinese": "详细描述"
+    },
+    {
+      "scope": "settings",
+      "english": "Please describe the issue in detail. The more actionable your feedback, the quicker our team can address your request. Some helpful information includes:",
+      "chinese": "请详细描述问题。反馈越具体，团队就越能快速处理。建议提供以下信息："
+    },
+    {
+      "scope": "settings",
+      "english": "Steps to reproduce the issue",
+      "chinese": "问题的复现步骤"
+    },
+    {
+      "scope": "settings",
+      "english": "Expected behavior",
+      "chinese": "预期表现"
+    },
+    {
+      "scope": "settings",
+      "english": "Actual behavior",
+      "chinese": "实际表现"
+    },
+    {
+      "scope": "settings",
+      "english": "Any error messages",
+      "chinese": "相关错误信息"
+    },
+    {
+      "scope": "settings",
+      "english": "Any relevant information",
+      "chinese": "其他相关信息"
+    },
+    {
+      "scope": "settings",
+      "english": "Describe the bug you encountered...",
+      "chinese": "请描述你遇到的问题……"
+    },
+    {
+      "scope": "settings",
+      "english": "Steps to Reproduce",
+      "chinese": "复现步骤"
+    },
+    {
+      "scope": "settings",
+      "english": "Please list the steps to reproduce the issue",
+      "chinese": "请列出问题的复现步骤"
+    },
+    {
+      "scope": "settings",
+      "english": "Please describe the feature you'd like to see. The more detailed the requirements, the easier it will be for our team to incorporate your ideas. Some helpful information includes:",
+      "chinese": "请描述你希望新增的功能。需求越详细，团队就越容易采纳你的建议。建议提供以下信息："
+    },
+    {
+      "scope": "settings",
+      "english": "What is missing in your workflow",
+      "chinese": "当前工作流程中缺少什么"
+    },
+    {
+      "scope": "settings",
+      "english": "What you would like to see to address this gap in your workflow",
+      "chinese": "你希望通过什么功能弥补工作流程中的不足"
+    },
+    {
+      "scope": "settings",
+      "english": "How this feature would help you and other users",
+      "chinese": "此功能将如何帮助你及其他用户"
+    },
+    {
+      "scope": "settings",
+      "english": "Describe the feature you would like to see...",
+      "chinese": "请描述你希望新增的功能……"
+    },
+    {
+      "scope": "settings",
+      "english": "Please describe your auth or billing issue. More details will help our support team resolve your issue quicker. Some helpful information includes:",
+      "chinese": "请描述你的登录或计费问题。更多细节有助于支持团队更快解决问题。建议提供以下信息："
+    },
+    {
+      "scope": "settings",
+      "english": "What quota or feature is being incorrectly limited",
+      "chinese": "哪些配额或功能被错误限制"
+    },
+    {
+      "scope": "settings",
+      "english": "What functionality you expect your account tier to have available that is missing",
+      "chinese": "你的账户套餐应当提供但目前缺少哪些功能"
+    },
+    {
+      "scope": "settings",
+      "english": "Any error messages seen when trying to log in",
+      "chinese": "尝试登录时出现的错误信息"
+    },
+    {
+      "scope": "settings",
+      "english": "Describe your auth or billing issue...",
+      "chinese": "请描述你的登录或计费问题……"
+    },
+    {
+      "scope": "settings",
+      "english": "Use this form if you cannot connect to Remote Control. If your instance is already connected and you are experiencing issues in the browser, report directly from the Remote Control web page so that relevant logs are included. Some helpful information includes:",
+      "chinese": "无法连接远程控制时，请使用此表单。如果设备已连接，但在浏览器中遇到问题，请直接从远程控制网页反馈，以便附带相关日志。建议提供以下信息："
+    },
+    {
+      "scope": "settings",
+      "english": "Whether it never connects or is intermittent/flaky",
+      "chinese": "是始终无法连接，还是连接时断时续"
+    },
+    {
+      "scope": "settings",
+      "english": "Did restarting the desktop app help?",
+      "chinese": "重启桌面应用是否有帮助？"
+    },
+    {
+      "scope": "settings",
+      "english": "Describe your Remote Control issue...",
+      "chinese": "请描述你的远程控制问题……"
+    },
+    {
+      "scope": "settings",
+      "english": "For any feedback that does not fit into the above categories.",
+      "chinese": "用于不属于以上类别的其他反馈。"
+    },
+    {
+      "scope": "settings",
+      "english": "Enter your feedback here...",
+      "chinese": "请在此输入你的反馈……"
+    },
+    {
+      "scope": "settings",
+      "english": "Attach a screenshot (optional)",
+      "chinese": "附加截图（可选）"
+    },
+    {
+      "scope": "settings",
+      "english": "Attach Antigravity server logs",
+      "chinese": "附加 Antigravity 服务端日志"
+    },
+    {
+      "scope": "settings",
+      "english": "Send feedback as",
+      "chinese": "以此账户发送反馈："
+    },
+    {
+      "scope": "settings",
+      "english": "Submit",
+      "chinese": "提交"
+    },
+    {
+      "scope": "settings",
+      "english": "Visit",
+      "chinese": "前往"
+    },
+    {
+      "scope": "settings",
+      "english": "Legal Help",
+      "chinese": "法律帮助"
+    },
+    {
+      "scope": "settings",
+      "english": "to ask for content changes for legal reasons.",
+      "chinese": "申请因法律原因修改内容。"
+    },
+    {
+      "scope": "native",
+      "english": "Rename",
+      "chinese": "重命名"
+    },
+    {
+      "scope": "native",
+      "english": "Pin",
+      "chinese": "置顶"
+    },
+    {
+      "scope": "native",
+      "english": "Unpin",
+      "chinese": "取消置顶"
+    },
+    {
+      "scope": "native",
+      "english": "Mark Unread",
+      "chinese": "标为未读"
+    },
+    {
+      "scope": "native",
+      "english": "Mark Read",
+      "chinese": "标为已读"
+    },
+    {
+      "scope": "native",
+      "english": "Copy",
+      "chinese": "复制"
+    },
+    {
+      "scope": "native",
+      "english": "Split",
+      "chinese": "拆分"
+    },
+    {
+      "scope": "native",
+      "english": "Split Right",
+      "chinese": "向右拆分"
+    },
+    {
+      "scope": "native",
+      "english": "Split Down",
+      "chinese": "向下拆分"
+    },
+    {
+      "scope": "native",
+      "english": "Replace with New",
+      "chinese": "替换为新对话"
+    },
+    {
+      "scope": "native",
+      "english": "Conversation Name",
+      "chinese": "对话名称"
+    },
+    {
+      "scope": "native",
+      "english": "Conversation ID",
+      "chinese": "对话 ID"
+    },
+    {
+      "scope": "native",
+      "english": "Project Name",
+      "chinese": "项目名称"
+    },
+    {
+      "scope": "native",
+      "english": "Copy Project Name",
+      "chinese": "复制项目名称"
+    },
+    {
+      "scope": "native",
+      "english": "Project Settings",
+      "chinese": "项目设置"
+    },
+    {
+      "scope": "native",
+      "english": "Show in File Explorer",
+      "chinese": "在文件资源管理器中显示"
+    },
+    {
+      "scope": "native",
+      "english": "Delete Project",
+      "chinese": "删除项目"
+    },
+    {
+      "scope": "native",
+      "english": "Archive",
+      "chinese": "归档"
+    },
+    {
+      "scope": "native",
+      "english": "Delete",
+      "chinese": "删除"
+    },
+    {
+      "scope": "native",
+      "english": "No agents running",
+      "chinese": "无智能体正在运行"
+    },
+    {
+      "scope": "native",
+      "english": "Open Antigravity",
+      "chinese": "打开 Antigravity"
+    },
+    {
+      "scope": "native",
+      "english": "Quit",
+      "chinese": "退出"
+    },
+    {
+      "scope": "native",
+      "english": "Connect to WSL",
+      "chinese": "连接到 WSL"
+    },
+    {
+      "scope": "native",
+      "english": "Reopen Locally",
+      "chinese": "在本机重新打开"
+    }
+  ],
+  "rules": [
+    {
+      "scope": "global",
+      "pattern": "/^Hi (.+), what can we get done today\\?$/",
+      "replacement": "你好，$1，今天需要完成什么？"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Updated ((?:\\d{4}年)?\\d{1,2}月\\d{1,2}日[,，]?\\s*\\d{1,2}:\\d{2}(?::\\d{2})?)$/",
+      "replacement": "更新于 $1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^(Send Message|Record Audio|Toggle Auxiliary Pane|Toggle Overview Panel|Archive Conversation|Pin Conversation|Unpin Conversation|Maximize Pane)(\\s+(?:Enter|(?:Ctrl|Alt|Shift|Meta|Cmd)\\+\\S+))$/",
+      "replacement": "(_, action, shortcut) => `${zhCnText[action]}${shortcut}`"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^(\\d+)(mo|s|m|h|d|w|y) ago$/",
+      "replacement": "(_, value, unit) => {\n        const units = { s: '秒', m: '分钟', h: '小时', d: '天', w: '周', mo: '个月', y: '年' };\n        return `${value} ${units[unit]}前`;\n    }"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Resets in ((?:\\d+[dhms]\\s*)+)$/",
+      "replacement": "(_, duration) => {\n        const units = { d: '天', h: '小时', m: '分钟', s: '秒' };\n        const translated = duration.replace(/(\\d+)([dhms])/g, (_, value, unit) => `${value} ${units[unit]}`);\n        return `将在 ${translated.trim()} 后重置`;\n    }"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Select Project ((?:Ctrl|Alt|Shift|Meta|Cmd)\\+.+)$/",
+      "replacement": "选择项目 $1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Select Model ((?:Ctrl|Alt|Shift|Meta|Cmd)\\+.+)$/",
+      "replacement": "选择模型 $1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Version (\\d+(?:\\.\\d+){1,3}(?:[-+][\\w.-]+)?)$/",
+      "replacement": "版本 $1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^(\\d+) agents? running$/",
+      "replacement": "$1 个智能体正在运行"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^No agents running$/",
+      "replacement": "无智能体正在运行"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Show (\\d+) breakdowns$/",
+      "replacement": "显示 $1 项明细"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^(\\d+) excluded$/",
+      "replacement": "已排除 $1 项"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Modified in (\\d+) projects?$/",
+      "replacement": "已在 $1 个项目中修改"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Select project, current: No Project$/",
+      "replacement": "选择项目，当前：无项目"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Select project, current: (.+)$/",
+      "replacement": "选择项目，当前：$1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Select model, current: (.+)$/",
+      "replacement": "选择模型，当前：$1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Agent permissions preset selector, current: (.+)$/",
+      "replacement": "智能体权限预设，当前：$1"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Send feedback as (.+)$/",
+      "replacement": "以 $1 发送反馈"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^You have used some of your weekly limit, it will fully refresh in (\\d+) days?, (\\d+) hours?\\.$/",
+      "replacement": "你已使用部分每周额度，将在 $1 天 $2 小时后完全恢复。"
+    },
+    {
+      "scope": "native",
+      "pattern": "/^(\\d+) agents? running$/",
+      "replacement": "$1 个智能体正在运行"
+    }
+  ]
+}
