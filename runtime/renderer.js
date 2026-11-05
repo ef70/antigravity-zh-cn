@@ -22,6 +22,10 @@ const zhCnText = {
     'Select Project': '选择项目',
     'Select Model': '选择模型',
     'View Usage': '查看用量',
+    Usage: '用量',
+    'Weekly limit': '每周额度',
+    '5h limit': '五小时额度',
+    '% left': '% 剩余',
     'Refreshing...': '正在刷新……',
     'Refreshing…': '正在刷新……',
     Medium: '中等',
@@ -37,6 +41,8 @@ const zhCnText = {
     'Run all commands without restrictions.': '不受限制地执行所有命令。',
     'Use Global Settings': '使用全局设置',
     Extensions: '扩展',
+    'Android Compose Preview': 'Android Compose 预览',
+    'Android Device Hub': 'Android 设备中心',
     'Biomolecular Structure Viewer': '生物分子结构查看器',
     'Command Palette': '命令面板',
     Version: '版本',
@@ -48,6 +54,16 @@ const zhCnText = {
     'Send Message': '发送消息',
     'Record Audio': '录制音频',
     Overview: '概览',
+    'Customize Sections': '自定义栏目',
+    'Background Tasks': '后台任务',
+    Goals: '目标',
+    Documents: '文档',
+    Artifacts: '产物',
+    Links: '链接',
+    'Modified Files': '已修改文件',
+    Uploads: '上传文件',
+    'Toggle Side Panel': '显示或隐藏侧边面板',
+    'Start Voice mode': '开始语音模式',
     Review: '审阅',
     Files: '文件',
     Terminal: '终端',
@@ -107,6 +123,23 @@ const zhCnText = {
     Appearance: '外观',
     Models: '模型',
     Customizations: '自定义',
+    Marketplace: '插件市场',
+    Installed: '已安装',
+    'Search customizations...': '搜索自定义内容……',
+    Featured: '精选',
+    Details: '详情',
+    "Prototype, build & run modern apps that users love with Firebase's backend, AI, and operational infrastructure.": '借助 Firebase 的后端、AI 和运维基础设施，为用户喜爱的现代应用设计原型、构建并运行应用。',
+    'Connect to Google Workspace, including Docs, Sheets, Slides, Drive, and Calendar.': '连接 Google Workspace，包括文档、表格、幻灯片、云端硬盘和日历。',
+    'Read, draft, and edit docs.': '阅读、起草和编辑文档。',
+    'Read, write, and format spreadsheets.': '读取、写入和设置电子表格格式。',
+    'Read, edit, and export presentations.': '阅读、编辑和导出演示文稿。',
+    'Search, upload, download, and share files.': '搜索、上传、下载和共享文件。',
+    'Check availability, schedule events, and RSVP.': '查看空闲时间、安排日程和回复邀请。',
+    'Build with Google': '使用 Google 平台构建',
+    "Build on Google's developer platforms, including Android, Chrome, Gemini, and Google Cloud.": '基于 Google 的开发者平台进行构建，包括 Android、Chrome、Gemini 和 Google Cloud。',
+    'Create with Prompt': '通过提示词创建',
+    'No automations yet': '暂无自动化任务',
+    "Run a prompt on a schedule, like a morning summary of yesterday's changes. Runs show up here.": '按计划运行提示词，例如每天早晨汇总昨日变更。运行记录会显示在这里。',
     Browser: '浏览器',
     App: '应用',
     Application: '应用',
@@ -315,6 +348,36 @@ const zhCnText = {
     'Configure allowed and denied URLs for browser actuation.': '配置允许或拒绝执行浏览器操作的网址。',
 };
 const zhCnSettingsFragments = {
+    'Voice volume': '语音音量',
+    'MANDATORY specialist subagent for Cloud Firestore Security Rules (firestore.rules). Whenever your task requires creating, authoring, or modifying Firestore Security Rules (firestore.rules), you MUST delegate rules authoring to this subagent rather than writing firestore.rules directly in the main agent.': 'Cloud Firestore 安全规则（firestore.rules）专用子智能体。创建或修改安全规则时，必须将规则编写工作交给此子智能体，而不是由主智能体直接编写 firestore.rules。',
+    'Audits Flutter code for accessibility (a11y). Invoke this agent when you need to review an application, pull request, or specific widget for accessibility issues and WCAG compliance.': '检查 Flutter 代码的无障碍支持（a11y）。审查应用、拉取请求或特定组件的无障碍问题及 WCAG 合规性时，可调用此智能体。',
+    Voice: '音色',
+    'The voice used in Voice mode. Powered by Gemini Live.': '语音模式使用的音色，由 Gemini Live 提供支持。',
+    'Not set': '未设置',
+    Change: '更改',
+    "How loud Antigravity's voice is.": 'Antigravity 语音的音量。',
+    Chat: '对话',
+    'Conversation Steps': '对话步骤',
+    'Choose how much detail is shown during a conversation.': '选择对话过程中显示的详细程度。',
+    Verbose: '详细',
+    Font: '字体',
+    'Chat Width': '对话宽度',
+    Fill: '填满',
+    Accessibility: '无障碍',
+    'Screen Reader Mode': '屏幕阅读器模式',
+    'Optimize the interface and terminal output for screen readers.': '为屏幕阅读器优化界面和终端输出。',
+    'Reopen Closed Tab': '重新打开已关闭的标签页',
+    'Move Conversation Up': '上移对话',
+    'Move Conversation Down': '下移对话',
+    'Previous Side Panel Tab': '上一个侧边面板标签页',
+    'Next Side Panel Tab': '下一个侧边面板标签页',
+    'Custom Agents': '自定义智能体',
+    'Danger Zone': '危险区域',
+    'Manage project folders and settings.': '管理项目文件夹和设置。',
+    'Permanently delete': '永久删除',
+    including: '，包括',
+    'active conversations.': '个进行中的对话。',
+    'active conversation.': '个进行中的对话。',
     'Modified in Outside of Project': '已在项目外对话中修改',
     'Built-in Browser': '内置浏览器',
     'Configure link opening and built-in browser preferences.': '设置链接打开方式和内置浏览器偏好。',
@@ -440,7 +503,8 @@ const zhCnSettingsFragments = {
 const zhCnPatterns = [
     [/^Hi (.+), what can we get done today\?$/, '你好，$1，今天需要完成什么？'],
     [/^Updated ((?:\d{4}年)?\d{1,2}月\d{1,2}日[,，]?\s*\d{1,2}:\d{2}(?::\d{2})?)$/, '更新于 $1'],
-    [/^(Send Message|Record Audio|Toggle Auxiliary Pane|Toggle Overview Panel|Archive Conversation|Pin Conversation|Unpin Conversation|Maximize Pane)(\s+(?:Enter|(?:Ctrl|Alt|Shift|Meta|Cmd)\+\S+))$/, (_, action, shortcut) => `${zhCnText[action]}${shortcut}`],
+    [/^(Send Message|Record Audio|Toggle Auxiliary Pane|Toggle Side Panel|Toggle Overview Panel|Archive Conversation|Pin Conversation|Unpin Conversation|Maximize Pane)(\s+(?:Enter|(?:Ctrl|Alt|Shift|Meta|Cmd)\+\S+))$/, (_, action, shortcut) => `${zhCnText[action]}${shortcut}`],
+    [/^(\d+(?:\.\d+)?%) left$/, '$1 剩余'],
     [/^(\d+)(mo|s|m|h|d|w|y) ago$/, (_, value, unit) => {
         const units = { s: '秒', m: '分钟', h: '小时', d: '天', w: '周', mo: '个月', y: '年' };
         return `${value} ${units[unit]}前`;
@@ -464,6 +528,13 @@ const zhCnPatterns = [
     [/^Agent permissions preset selector, current: (.+)$/, '智能体权限预设，当前：$1'],
     [/^Send feedback as (.+)$/, '以 $1 发送反馈'],
     [/^You have used some of your weekly limit, it will fully refresh in (\d+) days?, (\d+) hours?\.$/, '你已使用部分每周额度，将在 $1 天 $2 小时后完全恢复。'],
+    [/^You have used some of your 5-hour limit, it will fully refresh in (\d+) hours?, (\d+) minutes?\.$/, '你已使用部分五小时额度，将在 $1 小时 $2 分钟后完全恢复。'],
+];
+const zhCnSettingsPatterns = [
+    [/^Permanently delete (.+) including (\d+) active conversations?\.$/, '永久删除 $1，包括 $2 个进行中的对话。'],
+    [/^including (\d+) active conversations?\.$/, '，包括 $1 个进行中的对话。'],
+    [/^(\d+) active conversations?\.$/, '$1 个进行中的对话。'],
+    [/^(\d+) active conversations?$/, '$1 个进行中的对话'],
 ];
 function translateString(value, allowSettingsFragments = false) {
     const trimmed = value.trim();
@@ -475,6 +546,14 @@ function translateString(value, allowSettingsFragments = false) {
         translated = Object.hasOwn(zhCnSettingsFragments, trimmed) ? zhCnSettingsFragments[trimmed] : undefined;
         if (!translated && /^\d+ projects?$/.test(trimmed)) {
             translated = trimmed.replace(/^(\d+) projects?$/, '$1 个项目');
+        }
+        if (!translated) {
+            for (const [pattern, replacement] of zhCnSettingsPatterns) {
+                if (pattern.test(trimmed)) {
+                    translated = trimmed.replace(pattern, replacement);
+                    break;
+                }
+            }
         }
     }
     if (!translated) {
@@ -531,6 +610,15 @@ function translateNode(node) {
         return;
     }
     translateElementAttributes(element);
+    // React renders this fixed empty-state sentence as three text siblings.
+    const children = Array.from(element.childNodes);
+    if (children.length > 1 && children.every(child => child.nodeType === Node.TEXT_NODE)
+        && !element.closest?.('script, style, textarea, code, pre, [contenteditable="true"]')
+        && children.map(child => child.nodeValue || '').join('').trim() === 'No automations yet') {
+        children[0].nodeValue = translateString(children.map(child => child.nodeValue || '').join(''));
+        for (const child of children.slice(1)) child.nodeValue = '';
+        return;
+    }
     for (const child of element.childNodes) {
         translateNode(child);
     }

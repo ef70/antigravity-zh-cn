@@ -59,6 +59,109 @@ test('feedback account translation preserves the dynamic address', () => {
     assert.equal(translateString('Send feedback as user@example.test', true), '\u4ee5 user@example.test \u53d1\u9001\u53cd\u9988');
 });
 
+test('2.29 overview, marketplace and automation labels translate without changing brands', () => {
+    const labels = {
+        'Android Compose Preview': 'Android Compose 预览',
+        'Android Device Hub': 'Android 设备中心',
+        'Customize Sections': '自定义栏目',
+        'Background Tasks': '后台任务',
+        Goals: '目标', Documents: '文档', Artifacts: '产物', Links: '链接',
+        'Modified Files': '已修改文件', Uploads: '上传文件',
+        'Start Voice mode': '开始语音模式',
+        Marketplace: '插件市场', Installed: '已安装', Featured: '精选', Details: '详情',
+        'Search customizations...': '搜索自定义内容……',
+        'Create with Prompt': '通过提示词创建',
+        'No automations yet': '暂无自动化任务',
+        'Read, draft, and edit docs.': '阅读、起草和编辑文档。',
+        'Read, write, and format spreadsheets.': '读取、写入和设置电子表格格式。',
+        'Read, edit, and export presentations.': '阅读、编辑和导出演示文稿。',
+        'Search, upload, download, and share files.': '搜索、上传、下载和共享文件。',
+        'Check availability, schedule events, and RSVP.': '查看空闲时间、安排日程和回复邀请。',
+    };
+    for (const [english, chinese] of Object.entries(labels)) {
+        assert.equal(translateString(english), chinese);
+    }
+    for (const name of ['Firebase', 'Google Workspace', 'Google Docs', 'Google Sans', 'Gemini Live', 'firestore-rules-author', 'flutter_a11y_agent']) {
+        assert.equal(translateString(name, true), name);
+    }
+    assert.equal(translateString('Toggle Side Panel Ctrl+Shift+B'), '显示或隐藏侧边面板 Ctrl+Shift+B');
+});
+
+test('voice, accessibility, shortcut and project settings stay scoped', () => {
+    const labels = {
+        Voice: '音色', 'Not set': '未设置', Change: '更改', Chat: '对话',
+        'Conversation Steps': '对话步骤', Verbose: '详细', Font: '字体',
+        'Chat Width': '对话宽度', Fill: '填满', Accessibility: '无障碍',
+        'Screen Reader Mode': '屏幕阅读器模式',
+        'Reopen Closed Tab': '重新打开已关闭的标签页',
+        'Move Conversation Up': '上移对话', 'Move Conversation Down': '下移对话',
+        'Previous Side Panel Tab': '上一个侧边面板标签页',
+        'Next Side Panel Tab': '下一个侧边面板标签页',
+        'Custom Agents': '自定义智能体', 'Danger Zone': '危险区域',
+        'Manage project folders and settings.': '管理项目文件夹和设置。',
+    };
+    for (const [english, chinese] of Object.entries(labels)) {
+        assert.equal(translateString(english, true), chinese);
+        assert.equal(translateString(english), english);
+    }
+    for (const shortcut of ['Ctrl+Shift+T', 'Alt+Shift+Up', 'Ctrl+Shift+,']) {
+        assert.equal(translateString(shortcut, true), shortcut);
+    }
+});
+
+test('usage numbers and five-hour reset timers preserve values', () => {
+    assert.equal(translateString('Usage'), '用量');
+    assert.equal(translateString('Weekly limit'), '每周额度');
+    assert.equal(translateString('5h limit'), '五小时额度');
+    for (const percentage of ['0%', '99%', '100%', '99.5%']) {
+        assert.equal(translateString(`${percentage} left`), `${percentage} 剩余`);
+    }
+    assert.equal(translateString('% left'), '% 剩余');
+    assert.equal(translateString('left'), 'left');
+    for (const [hours, minutes] of [[4, 56], [1, 1], [0, 9]]) {
+        const english = `You have used some of your 5-hour limit, it will fully refresh in ${hours} hour${hours === 1 ? '' : 's'}, ${minutes} minute${minutes === 1 ? '' : 's'}.`;
+        assert.equal(translateString(english, true), `你已使用部分五小时额度，将在 ${hours} 小时 ${minutes} 分钟后完全恢复。`);
+    }
+    assert.equal(translateString('Turn left in 5 hours.'), 'Turn left in 5 hours.');
+});
+
+test('project deletion descriptions only translate in settings and preserve dynamic values', () => {
+    for (const count of [0, 1, 7]) {
+        const english = `Permanently delete Example Project including ${count} active conversation${count === 1 ? '' : 's'}.`;
+        assert.equal(translateString(english, true), `永久删除 Example Project，包括 ${count} 个进行中的对话。`);
+        assert.equal(translateString(english), english);
+    }
+    assert.equal(translateString('including 7 active conversations.', true), '，包括 7 个进行中的对话。');
+    assert.equal(translateString('7 active conversations.', true), '7 个进行中的对话。');
+    assert.equal(translateString('7 active conversations', true), '7 个进行中的对话');
+    assert.equal(translateString('1 active conversation', true), '1 个进行中的对话');
+    assert.equal(translateString('7 active conversations.'), '7 active conversations.');
+    assert.equal(translateString('including', false), 'including');
+    const dialog = new Element('div', null, { role: 'dialog' });
+    const label = new Element('span', dialog);
+    label.childNodes.push({ nodeType: 3, parentElement: label, nodeValue: 'Permanently delete ' });
+    translateNode(label);
+    assert.equal(label.childNodes[0].nodeValue, '永久删除 ');
+    assert.equal(label.attributes.onclick, undefined);
+});
+
+test('fragmented automation empty state preserves its nodes and protected content', () => {
+    for (const tag of ['h2', 'pre', 'code', 'textarea']) {
+        const element = new Element(tag);
+        const children = ['No ', 'automations', ' yet'].map(nodeValue => ({ nodeType: 3, parentElement: element, nodeValue }));
+        element.childNodes.push(...children);
+        translateNode(element);
+        assert.equal(element.childNodes.length, 3);
+        assert.equal(element.childNodes.map(child => child.nodeValue).join(''), tag === 'h2' ? '暂无自动化任务' : 'No automations yet');
+        assert.equal(element.childNodes[0], children[0]);
+    }
+    const input = new Element('div', null, { contenteditable: 'true' });
+    const span = new Element('span', input);
+    span.childNodes = ['No ', 'automations', ' yet'].map(nodeValue => ({ nodeType: 3, parentElement: span, nodeValue }));
+    translateNode(span);
+    assert.equal(span.childNodes.map(child => child.nodeValue).join(''), 'No automations yet');
+});
+
 test('top-level menus translate outside settings without changing versions or hotkeys', () => {
     const labels = {
         Minimize: '\u6700\u5c0f\u5316',

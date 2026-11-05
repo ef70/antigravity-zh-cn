@@ -6,13 +6,14 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const source = fs.readFileSync(path.join(root, 'runtime/renderer.js'), 'utf8');
 const context = vm.createContext({});
-vm.runInContext(source.slice(0, source.lastIndexOf('installZhCnRuntimeTranslation();')) + '\nglobalThis.data = { global: zhCnText, settings: zhCnSettingsFragments, rules: zhCnPatterns };', context, { timeout: 1000 });
+vm.runInContext(source.slice(0, source.lastIndexOf('installZhCnRuntimeTranslation();')) + '\nglobalThis.data = { global: zhCnText, settings: zhCnSettingsFragments, rules: zhCnPatterns, settingsRules: zhCnSettingsPatterns };', context, { timeout: 1000 });
 const nativeContext = vm.createContext({ module: { exports: {} } });
 vm.runInContext(fs.readFileSync(path.join(root, 'runtime/native-menu-zh-cn.js'), 'utf8') + '\nglobalThis.data = { native: Object.fromEntries(labels), rules: nativePatterns };', nativeContext, { timeout: 1000 });
 const dictionaries = { global: context.data.global, settings: context.data.settings, native: nativeContext.data.native };
 const entries = Object.entries(dictionaries).flatMap(([scope, dictionary]) => Object.entries(dictionary).map(([english, chinese]) => ({ scope, english, chinese })));
 const rules = [
     ...Array.from(context.data.rules, rule => ['global', rule]),
+    ...Array.from(context.data.settingsRules, rule => ['settings', rule]),
     ...Array.from(nativeContext.data.rules, rule => ['native', rule]),
 ].map(([scope, [pattern, replacement]]) => ({ scope, pattern: pattern.toString(), replacement: String(replacement) }));
 const manifest = require('../supported.json');

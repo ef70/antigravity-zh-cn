@@ -1,12 +1,12 @@
 {
-  "patchVersion": "2026.11.04.1",
+  "patchVersion": "2026.11.05.1",
   "supportedVersions": [
     "2.29.0"
   ],
   "counts": {
-    "entries": 457,
-    "uniqueEnglish": 438,
-    "dynamicRules": 21
+    "entries": 520,
+    "uniqueEnglish": 501,
+    "dynamicRules": 27
   },
   "settingsRule": {
     "pattern": "/^(\\d+) projects?$/",
@@ -130,6 +130,26 @@
     },
     {
       "scope": "global",
+      "english": "Usage",
+      "chinese": "用量"
+    },
+    {
+      "scope": "global",
+      "english": "Weekly limit",
+      "chinese": "每周额度"
+    },
+    {
+      "scope": "global",
+      "english": "5h limit",
+      "chinese": "五小时额度"
+    },
+    {
+      "scope": "global",
+      "english": "% left",
+      "chinese": "% 剩余"
+    },
+    {
+      "scope": "global",
       "english": "Refreshing...",
       "chinese": "正在刷新……"
     },
@@ -205,6 +225,16 @@
     },
     {
       "scope": "global",
+      "english": "Android Compose Preview",
+      "chinese": "Android Compose 预览"
+    },
+    {
+      "scope": "global",
+      "english": "Android Device Hub",
+      "chinese": "Android 设备中心"
+    },
+    {
+      "scope": "global",
       "english": "Biomolecular Structure Viewer",
       "chinese": "生物分子结构查看器"
     },
@@ -257,6 +287,56 @@
       "scope": "global",
       "english": "Overview",
       "chinese": "概览"
+    },
+    {
+      "scope": "global",
+      "english": "Customize Sections",
+      "chinese": "自定义栏目"
+    },
+    {
+      "scope": "global",
+      "english": "Background Tasks",
+      "chinese": "后台任务"
+    },
+    {
+      "scope": "global",
+      "english": "Goals",
+      "chinese": "目标"
+    },
+    {
+      "scope": "global",
+      "english": "Documents",
+      "chinese": "文档"
+    },
+    {
+      "scope": "global",
+      "english": "Artifacts",
+      "chinese": "产物"
+    },
+    {
+      "scope": "global",
+      "english": "Links",
+      "chinese": "链接"
+    },
+    {
+      "scope": "global",
+      "english": "Modified Files",
+      "chinese": "已修改文件"
+    },
+    {
+      "scope": "global",
+      "english": "Uploads",
+      "chinese": "上传文件"
+    },
+    {
+      "scope": "global",
+      "english": "Toggle Side Panel",
+      "chinese": "显示或隐藏侧边面板"
+    },
+    {
+      "scope": "global",
+      "english": "Start Voice mode",
+      "chinese": "开始语音模式"
     },
     {
       "scope": "global",
@@ -552,6 +632,91 @@
       "scope": "global",
       "english": "Customizations",
       "chinese": "自定义"
+    },
+    {
+      "scope": "global",
+      "english": "Marketplace",
+      "chinese": "插件市场"
+    },
+    {
+      "scope": "global",
+      "english": "Installed",
+      "chinese": "已安装"
+    },
+    {
+      "scope": "global",
+      "english": "Search customizations...",
+      "chinese": "搜索自定义内容……"
+    },
+    {
+      "scope": "global",
+      "english": "Featured",
+      "chinese": "精选"
+    },
+    {
+      "scope": "global",
+      "english": "Details",
+      "chinese": "详情"
+    },
+    {
+      "scope": "global",
+      "english": "Prototype, build & run modern apps that users love with Firebase's backend, AI, and operational infrastructure.",
+      "chinese": "借助 Firebase 的后端、AI 和运维基础设施，为用户喜爱的现代应用设计原型、构建并运行应用。"
+    },
+    {
+      "scope": "global",
+      "english": "Connect to Google Workspace, including Docs, Sheets, Slides, Drive, and Calendar.",
+      "chinese": "连接 Google Workspace，包括文档、表格、幻灯片、云端硬盘和日历。"
+    },
+    {
+      "scope": "global",
+      "english": "Read, draft, and edit docs.",
+      "chinese": "阅读、起草和编辑文档。"
+    },
+    {
+      "scope": "global",
+      "english": "Read, write, and format spreadsheets.",
+      "chinese": "读取、写入和设置电子表格格式。"
+    },
+    {
+      "scope": "global",
+      "english": "Read, edit, and export presentations.",
+      "chinese": "阅读、编辑和导出演示文稿。"
+    },
+    {
+      "scope": "global",
+      "english": "Search, upload, download, and share files.",
+      "chinese": "搜索、上传、下载和共享文件。"
+    },
+    {
+      "scope": "global",
+      "english": "Check availability, schedule events, and RSVP.",
+      "chinese": "查看空闲时间、安排日程和回复邀请。"
+    },
+    {
+      "scope": "global",
+      "english": "Build with Google",
+      "chinese": "使用 Google 平台构建"
+    },
+    {
+      "scope": "global",
+      "english": "Build on Google's developer platforms, including Android, Chrome, Gemini, and Google Cloud.",
+      "chinese": "基于 Google 的开发者平台进行构建，包括 Android、Chrome、Gemini 和 Google Cloud。"
+    },
+    {
+      "scope": "global",
+      "english": "Create with Prompt",
+      "chinese": "通过提示词创建"
+    },
+    {
+      "scope": "global",
+      "english": "No automations yet",
+      "chinese": "暂无自动化任务"
+    },
+    {
+      "scope": "global",
+      "english": "Run a prompt on a schedule, like a morning summary of yesterday's changes. Runs show up here.",
+      "chinese": "按计划运行提示词，例如每天早晨汇总昨日变更。运行记录会显示在这里。"
     },
     {
       "scope": "global",
@@ -1580,6 +1745,156 @@
     },
     {
       "scope": "settings",
+      "english": "Voice volume",
+      "chinese": "语音音量"
+    },
+    {
+      "scope": "settings",
+      "english": "MANDATORY specialist subagent for Cloud Firestore Security Rules (firestore.rules). Whenever your task requires creating, authoring, or modifying Firestore Security Rules (firestore.rules), you MUST delegate rules authoring to this subagent rather than writing firestore.rules directly in the main agent.",
+      "chinese": "Cloud Firestore 安全规则（firestore.rules）专用子智能体。创建或修改安全规则时，必须将规则编写工作交给此子智能体，而不是由主智能体直接编写 firestore.rules。"
+    },
+    {
+      "scope": "settings",
+      "english": "Audits Flutter code for accessibility (a11y). Invoke this agent when you need to review an application, pull request, or specific widget for accessibility issues and WCAG compliance.",
+      "chinese": "检查 Flutter 代码的无障碍支持（a11y）。审查应用、拉取请求或特定组件的无障碍问题及 WCAG 合规性时，可调用此智能体。"
+    },
+    {
+      "scope": "settings",
+      "english": "Voice",
+      "chinese": "音色"
+    },
+    {
+      "scope": "settings",
+      "english": "The voice used in Voice mode. Powered by Gemini Live.",
+      "chinese": "语音模式使用的音色，由 Gemini Live 提供支持。"
+    },
+    {
+      "scope": "settings",
+      "english": "Not set",
+      "chinese": "未设置"
+    },
+    {
+      "scope": "settings",
+      "english": "Change",
+      "chinese": "更改"
+    },
+    {
+      "scope": "settings",
+      "english": "How loud Antigravity's voice is.",
+      "chinese": "Antigravity 语音的音量。"
+    },
+    {
+      "scope": "settings",
+      "english": "Chat",
+      "chinese": "对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Conversation Steps",
+      "chinese": "对话步骤"
+    },
+    {
+      "scope": "settings",
+      "english": "Choose how much detail is shown during a conversation.",
+      "chinese": "选择对话过程中显示的详细程度。"
+    },
+    {
+      "scope": "settings",
+      "english": "Verbose",
+      "chinese": "详细"
+    },
+    {
+      "scope": "settings",
+      "english": "Font",
+      "chinese": "字体"
+    },
+    {
+      "scope": "settings",
+      "english": "Chat Width",
+      "chinese": "对话宽度"
+    },
+    {
+      "scope": "settings",
+      "english": "Fill",
+      "chinese": "填满"
+    },
+    {
+      "scope": "settings",
+      "english": "Accessibility",
+      "chinese": "无障碍"
+    },
+    {
+      "scope": "settings",
+      "english": "Screen Reader Mode",
+      "chinese": "屏幕阅读器模式"
+    },
+    {
+      "scope": "settings",
+      "english": "Optimize the interface and terminal output for screen readers.",
+      "chinese": "为屏幕阅读器优化界面和终端输出。"
+    },
+    {
+      "scope": "settings",
+      "english": "Reopen Closed Tab",
+      "chinese": "重新打开已关闭的标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Move Conversation Up",
+      "chinese": "上移对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Move Conversation Down",
+      "chinese": "下移对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Previous Side Panel Tab",
+      "chinese": "上一个侧边面板标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Next Side Panel Tab",
+      "chinese": "下一个侧边面板标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Custom Agents",
+      "chinese": "自定义智能体"
+    },
+    {
+      "scope": "settings",
+      "english": "Danger Zone",
+      "chinese": "危险区域"
+    },
+    {
+      "scope": "settings",
+      "english": "Manage project folders and settings.",
+      "chinese": "管理项目文件夹和设置。"
+    },
+    {
+      "scope": "settings",
+      "english": "Permanently delete",
+      "chinese": "永久删除"
+    },
+    {
+      "scope": "settings",
+      "english": "including",
+      "chinese": "，包括"
+    },
+    {
+      "scope": "settings",
+      "english": "active conversations.",
+      "chinese": "个进行中的对话。"
+    },
+    {
+      "scope": "settings",
+      "english": "active conversation.",
+      "chinese": "个进行中的对话。"
+    },
+    {
+      "scope": "settings",
       "english": "Modified in Outside of Project",
       "chinese": "已在项目外对话中修改"
     },
@@ -2312,8 +2627,13 @@
     },
     {
       "scope": "global",
-      "pattern": "/^(Send Message|Record Audio|Toggle Auxiliary Pane|Toggle Overview Panel|Archive Conversation|Pin Conversation|Unpin Conversation|Maximize Pane)(\\s+(?:Enter|(?:Ctrl|Alt|Shift|Meta|Cmd)\\+\\S+))$/",
+      "pattern": "/^(Send Message|Record Audio|Toggle Auxiliary Pane|Toggle Side Panel|Toggle Overview Panel|Archive Conversation|Pin Conversation|Unpin Conversation|Maximize Pane)(\\s+(?:Enter|(?:Ctrl|Alt|Shift|Meta|Cmd)\\+\\S+))$/",
       "replacement": "(_, action, shortcut) => `${zhCnText[action]}${shortcut}`"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^(\\d+(?:\\.\\d+)?%) left$/",
+      "replacement": "$1 剩余"
     },
     {
       "scope": "global",
@@ -2394,6 +2714,31 @@
       "scope": "global",
       "pattern": "/^You have used some of your weekly limit, it will fully refresh in (\\d+) days?, (\\d+) hours?\\.$/",
       "replacement": "你已使用部分每周额度，将在 $1 天 $2 小时后完全恢复。"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^You have used some of your 5-hour limit, it will fully refresh in (\\d+) hours?, (\\d+) minutes?\\.$/",
+      "replacement": "你已使用部分五小时额度，将在 $1 小时 $2 分钟后完全恢复。"
+    },
+    {
+      "scope": "settings",
+      "pattern": "/^Permanently delete (.+) including (\\d+) active conversations?\\.$/",
+      "replacement": "永久删除 $1，包括 $2 个进行中的对话。"
+    },
+    {
+      "scope": "settings",
+      "pattern": "/^including (\\d+) active conversations?\\.$/",
+      "replacement": "，包括 $1 个进行中的对话。"
+    },
+    {
+      "scope": "settings",
+      "pattern": "/^(\\d+) active conversations?\\.$/",
+      "replacement": "$1 个进行中的对话。"
+    },
+    {
+      "scope": "settings",
+      "pattern": "/^(\\d+) active conversations?$/",
+      "replacement": "$1 个进行中的对话"
     },
     {
       "scope": "native",
