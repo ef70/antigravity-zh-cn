@@ -1,18 +1,153 @@
 {
-  "patchVersion": "2026.11.05.1",
+  "patchVersion": "2026.11.05.2",
   "supportedVersions": [
     "2.29.0"
   ],
   "counts": {
-    "entries": 520,
-    "uniqueEnglish": 501,
-    "dynamicRules": 27
+    "entries": 551,
+    "uniqueEnglish": 532,
+    "dynamicRules": 29
   },
   "settingsRule": {
     "pattern": "/^(\\d+) projects?$/",
     "replacement": "$1 个项目"
   },
   "entries": [
+    {
+      "scope": "global",
+      "english": "Add Context",
+      "chinese": "添加上下文"
+    },
+    {
+      "scope": "global",
+      "english": "Folder",
+      "chinese": "文件夹"
+    },
+    {
+      "scope": "global",
+      "english": "Mentions",
+      "chinese": "提及"
+    },
+    {
+      "scope": "global",
+      "english": "Actions",
+      "chinese": "操作"
+    },
+    {
+      "scope": "global",
+      "english": "Show Less",
+      "chinese": "收起"
+    },
+    {
+      "scope": "global",
+      "english": "Sign in required",
+      "chinese": "需要登录"
+    },
+    {
+      "scope": "global",
+      "english": "Skills & Rules",
+      "chinese": "技能与规则"
+    },
+    {
+      "scope": "global",
+      "english": "Custom Agents",
+      "chinese": "自定义智能体"
+    },
+    {
+      "scope": "global",
+      "english": "No custom agents yet.",
+      "chinese": "暂无自定义智能体。"
+    },
+    {
+      "scope": "global",
+      "english": "MCP Servers",
+      "chinese": "MCP 服务器"
+    },
+    {
+      "scope": "global",
+      "english": "Fix with Agent",
+      "chinese": "让智能体修复"
+    },
+    {
+      "scope": "global",
+      "english": "Business",
+      "chinese": "商业应用"
+    },
+    {
+      "scope": "global",
+      "english": "Accept payments and grow your business. Stripe's official MCP server enables AI agents to manage customers, products, prices, payment links, invoices, subscriptions, and refunds, as well as search Stripe documentation.",
+      "chinese": "接收付款并拓展业务。Stripe 官方 MCP 服务器让智能体管理客户、产品、价格、付款链接、发票、订阅和退款，并搜索 Stripe 文档。"
+    },
+    {
+      "scope": "global",
+      "english": "Databricks skills for the CLI, Apps, Lakebase, Model Serving, Lakeflow Jobs, Spark Declarative Pipelines, Declarative Automation Bundles (DABs), and classic-to-serverless migration.",
+      "chinese": "适用于 Databricks CLI、Apps、Lakebase、模型服务、Lakeflow Jobs、Spark 声明式流水线、声明式自动化包（DABs）及传统架构向无服务器架构迁移的技能。"
+    },
+    {
+      "scope": "global",
+      "english": "Search Intercom conversations, contacts, and companies, spot support trends, and install the Intercom Messenger with secure identity verification.",
+      "chinese": "搜索 Intercom 对话、联系人和公司，发现客户支持趋势，并安装带有安全身份验证的 Intercom Messenger。"
+    },
+    {
+      "scope": "global",
+      "english": "SEO workflows on live Semrush data: keyword research, site audits, backlinks, competitor, traffic and market analytics, PPC, and AI brand visibility.",
+      "chinese": "基于 Semrush 实时数据开展 SEO 工作：关键词研究、网站审计、反向链接、竞争对手、流量与市场分析、点击付费广告及 AI 品牌可见度分析。"
+    },
+    {
+      "scope": "global",
+      "english": "Search and read your Wispr Flow meeting notes, transcripts, scratchpad notes, and calendar events. Read-only access to your own account.",
+      "chinese": "搜索和阅读你的 Wispr Flow 会议笔记、转录、草稿笔记及日历事件。仅以只读方式访问你自己的账户。"
+    },
+    {
+      "scope": "global",
+      "english": "Manage your Bigin CRM from Antigravity: review pipelines, find contacts and deals, log calls, plan follow-ups, and email customers.",
+      "chinese": "在 Antigravity 中管理 Bigin CRM：查看销售流程、查找联系人和商机、记录通话、安排跟进并向客户发送邮件。"
+    },
+    {
+      "scope": "global",
+      "english": "Connect to your managed Looker MCP server to explore data, run saved Looks, build dashboards, and validate LookML.",
+      "chinese": "连接你管理的 Looker MCP 服务器，探索数据、运行已保存的 Look、构建仪表板并验证 LookML。"
+    },
+    {
+      "scope": "global",
+      "english": "Payments, CRM, accounting, data, identity, customer support, marketing, and workflow automation.",
+      "chinese": "支付、客户关系管理、会计、数据、身份认证、客户支持、营销和工作流自动化。"
+    },
+    {
+      "scope": "global",
+      "english": "More Plugins",
+      "chinese": "更多插件"
+    },
+    {
+      "scope": "global",
+      "english": "Explore other marketplace customizations",
+      "chinese": "探索插件市场中的其他自定义内容"
+    },
+    {
+      "scope": "global",
+      "english": "Choose Antigravity's Voice",
+      "chinese": "选择 Antigravity 的音色"
+    },
+    {
+      "scope": "global",
+      "english": "Powered by Gemini Live · You can change this in",
+      "chinese": "由 Gemini Live 提供支持，可稍后在"
+    },
+    {
+      "scope": "global",
+      "english": "Clear and friendly",
+      "chinese": "清晰友好"
+    },
+    {
+      "scope": "global",
+      "english": "Google does not control the availability or functionality of third-party developer tools. Your data from third-party developer tools connected to your Antigravity instance may be shared with Google. Google will protect any such data in accordance with the Google Privacy Policy, found here:",
+      "chinese": "Google 不控制第三方开发者工具的可用性或功能。连接到你的 Antigravity 实例的第三方开发者工具所产生的数据可能会与 Google 共享。Google 将按照 Google 隐私政策保护这些数据，政策详见："
+    },
+    {
+      "scope": "global",
+      "english": "Use Fola",
+      "chinese": "使用 Fola"
+    },
     {
       "scope": "global",
       "english": "Workspace",
@@ -1745,6 +1880,31 @@
     },
     {
       "scope": "settings",
+      "english": "Use",
+      "chinese": "使用"
+    },
+    {
+      "scope": "settings",
+      "english": "later.",
+      "chinese": "中更改。"
+    },
+    {
+      "scope": "settings",
+      "english": "Mute Voice Mic",
+      "chinese": "将语音麦克风静音"
+    },
+    {
+      "scope": "settings",
+      "english": "Mute Voice Speaker",
+      "chinese": "将语音扬声器静音"
+    },
+    {
+      "scope": "settings",
+      "english": "Toggle Maximize Side Panel",
+      "chinese": "切换侧边面板最大化"
+    },
+    {
+      "scope": "settings",
       "english": "Voice volume",
       "chinese": "语音音量"
     },
@@ -1857,11 +2017,6 @@
       "scope": "settings",
       "english": "Next Side Panel Tab",
       "chinese": "下一个侧边面板标签页"
-    },
-    {
-      "scope": "settings",
-      "english": "Custom Agents",
-      "chinese": "自定义智能体"
     },
     {
       "scope": "settings",
@@ -2615,6 +2770,16 @@
     }
   ],
   "rules": [
+    {
+      "scope": "global",
+      "pattern": "/^See (\\d+) more$/",
+      "replacement": "再显示 $1 项"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^(\\d+) tools? enabled$/",
+      "replacement": "已启用 $1 个工具"
+    },
     {
       "scope": "global",
       "pattern": "/^Hi (.+), what can we get done today\\?$/",

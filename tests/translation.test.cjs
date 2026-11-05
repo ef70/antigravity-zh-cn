@@ -59,6 +59,19 @@ test('feedback account translation preserves the dynamic address', () => {
     assert.equal(translateString('Send feedback as user@example.test', true), '\u4ee5 user@example.test \u53d1\u9001\u53cd\u9988');
 });
 
+test('context menus and plugin controls translate while raw connection errors stay intact', () => {
+    for (const [english, chinese] of Object.entries({ 'Add Context': '添加上下文', Folder: '文件夹', Mentions: '提及', Actions: '操作', 'Show Less': '收起', 'Sign in required': '需要登录', 'Custom Agents': '自定义智能体', 'Skills & Rules': '技能与规则', 'MCP Servers': 'MCP 服务器', 'Fix with Agent': '让智能体修复' })) {
+        assert.equal(translateString(english), chinese);
+    }
+    assert.equal(translateString('See 19 more'), '再显示 19 项');
+    assert.equal(translateString('14 tools enabled'), '已启用 14 个工具');
+    assert.equal(translateString('Use ', true), '使用 ');
+    assert.equal(translateString('Use '), 'Use ');
+    assert.equal(translateString('Fola', true), 'Fola');
+    const error = 'Error: [MCP Proxy] Socket connection error: connect ENOENT';
+    assert.equal(translateString(error), error);
+});
+
 test('2.29 overview, marketplace and automation labels translate without changing brands', () => {
     const labels = {
         'Android Compose Preview': 'Android Compose 预览',
@@ -97,7 +110,7 @@ test('voice, accessibility, shortcut and project settings stay scoped', () => {
         'Move Conversation Up': '上移对话', 'Move Conversation Down': '下移对话',
         'Previous Side Panel Tab': '上一个侧边面板标签页',
         'Next Side Panel Tab': '下一个侧边面板标签页',
-        'Custom Agents': '自定义智能体', 'Danger Zone': '危险区域',
+        'Danger Zone': '危险区域',
         'Manage project folders and settings.': '管理项目文件夹和设置。',
     };
     for (const [english, chinese] of Object.entries(labels)) {

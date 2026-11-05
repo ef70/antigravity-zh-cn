@@ -1,5 +1,5 @@
 {
-  "patchVersion": "2026.11.05.1",
+  "patchVersion": "2026.11.05.2",
   "versions": {
     "2.29.0": {
       "original": {
@@ -8,7 +8,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "8267b60e43853bd87735cff8158348f4d4ade7f3a69c7241adb4da8cac1cdc93",
+        "preload.js": "02dc3025ea43c12fb8e66705a1fb9623df355c293294f96145ab3a0a76260912",
         "ipcHandlers.js": "d811156f5184f30c5bdfad7277d46a4f769a80c86f3d69fcd38d90bb783c79e3",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
