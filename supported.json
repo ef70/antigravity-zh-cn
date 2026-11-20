@@ -1,6 +1,18 @@
 {
-  "patchVersion": "2026.11.05.2",
+  "patchVersion": "2026.11.20.1",
   "versions": {
+    "2.33.0": {
+      "original": {
+        "preload.js": "2f1e963bbcbcb47426597c89667f85c415f1a09e8fc8b0e903a4e1f8baeb41dc",
+        "ipcHandlers.js": "78c68796bf3a3a162aa2a9852e4fc534ae91a049fee72d5541cdb4e2b4efcfaa",
+        "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
+      },
+      "patched": {
+        "preload.js": "84e5c7aab94a8c1a2734bf561ca4e05448afcd89dd8dd1b546731742cc1d1197",
+        "ipcHandlers.js": "25fcac0609123dc736b129b3a443f8fa05dbc4f1ce19a21d161009cd823150d2",
+        "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
+      }
+    },
     "2.29.0": {
       "original": {
         "preload.js": "2f4348c24fa6feeba6fef81644603304667b43a446b3887370781e90ec37ca2c",
@@ -8,7 +20,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "02dc3025ea43c12fb8e66705a1fb9623df355c293294f96145ab3a0a76260912",
+        "preload.js": "44352fc0c882fe6322aa0e85d1973f8ea60112e6287767c0979c434f59d9de05",
         "ipcHandlers.js": "d811156f5184f30c5bdfad7277d46a4f769a80c86f3d69fcd38d90bb783c79e3",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }

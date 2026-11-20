@@ -1,4 +1,5 @@
 const zhCnText = {
+    Auto: '自动',
     'Add Context': '添加上下文',
     Folder: '文件夹',
     Mentions: '提及',
@@ -375,6 +376,11 @@ const zhCnText = {
     'Configure allowed and denied URLs for browser actuation.': '配置允许或拒绝执行浏览器操作的网址。',
 };
 const zhCnSettingsFragments = {
+    'Interface Layout': '界面布局',
+    'Knowledge Work': '知识工作',
+    'Software Engineering': '软件工程',
+    'Simplified interface for research, writing, and everyday tasks.': '适用于研究、写作和日常任务的简洁界面。',
+    'Full interface for coding, developer tools, and managing agents.': '提供编程、开发工具和智能体管理功能的完整界面。',
     Use: '使用',
     'later.': '中更改。',
     'Mute Voice Mic': '将语音麦克风静音',
@@ -532,6 +538,9 @@ const zhCnSettingsFragments = {
     'to ask for content changes for legal reasons.': '申请因法律原因修改内容。',
 };
 const zhCnPatterns = [
+    [/^Good to see you, (.+)\. What's next\?$/, '很高兴见到你，$1。接下来做什么？'],
+    [/^Welcome back, (.+)\. Where should we pick up\?$/, '欢迎回来，$1。我们从哪里继续？'],
+    [/^See all \((\d+)\)$/, '显示全部（$1）'],
     [/^See (\d+) more$/, '再显示 $1 项'],
     [/^(\d+) tools? enabled$/, '已启用 $1 个工具'],
     [/^Hi (.+), what can we get done today\?$/, '你好，$1，今天需要完成什么？'],

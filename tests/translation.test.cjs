@@ -59,6 +59,17 @@ test('feedback account translation preserves the dynamic address', () => {
     assert.equal(translateString('Send feedback as user@example.test', true), '\u4ee5 user@example.test \u53d1\u9001\u53cd\u9988');
 });
 
+test('2.33 layout and greetings retain names and counts', () => {
+    assert.equal(translateString('Auto'), '自动');
+    assert.equal(translateString('See all (8)'), '显示全部（8）');
+    assert.equal(translateString('Welcome back, Example. Where should we pick up?'), '欢迎回来，Example。我们从哪里继续？');
+    assert.equal(translateString("Good to see you, Example. What's next?"), '很高兴见到你，Example。接下来做什么？');
+    assert.equal(translateString('Interface Layout', true), '界面布局');
+    assert.equal(translateString('Interface Layout'), 'Interface Layout');
+    assert.equal(translateString('Knowledge Work', true), '知识工作');
+    assert.equal(translateString('Software Engineering', true), '软件工程');
+});
+
 test('context menus and plugin controls translate while raw connection errors stay intact', () => {
     for (const [english, chinese] of Object.entries({ 'Add Context': '添加上下文', Folder: '文件夹', Mentions: '提及', Actions: '操作', 'Show Less': '收起', 'Sign in required': '需要登录', 'Custom Agents': '自定义智能体', 'Skills & Rules': '技能与规则', 'MCP Servers': 'MCP 服务器', 'Fix with Agent': '让智能体修复' })) {
         assert.equal(translateString(english), chinese);
@@ -477,6 +488,7 @@ test('preload context-menu bridge remains unchanged and preserves selection resu
         ipcRenderer: { on: () => {}, removeListener: () => {}, invoke: async (...args) => { calls.push(args); return 'copy-id'; } },
     };
     const fullContext = vm.createContext({
+        process: { argv: [] },
         exports: {},
         require: (name) => { assert.equal(name, 'electron'); return electron; },
         document: { readyState: 'loading' },

@@ -1,18 +1,24 @@
 {
-  "patchVersion": "2026.11.05.2",
+  "patchVersion": "2026.11.20.1",
   "supportedVersions": [
+    "2.33.0",
     "2.29.0"
   ],
   "counts": {
-    "entries": 551,
-    "uniqueEnglish": 532,
-    "dynamicRules": 29
+    "entries": 557,
+    "uniqueEnglish": 538,
+    "dynamicRules": 32
   },
   "settingsRule": {
     "pattern": "/^(\\d+) projects?$/",
     "replacement": "$1 个项目"
   },
   "entries": [
+    {
+      "scope": "global",
+      "english": "Auto",
+      "chinese": "自动"
+    },
     {
       "scope": "global",
       "english": "Add Context",
@@ -1880,6 +1886,31 @@
     },
     {
       "scope": "settings",
+      "english": "Interface Layout",
+      "chinese": "界面布局"
+    },
+    {
+      "scope": "settings",
+      "english": "Knowledge Work",
+      "chinese": "知识工作"
+    },
+    {
+      "scope": "settings",
+      "english": "Software Engineering",
+      "chinese": "软件工程"
+    },
+    {
+      "scope": "settings",
+      "english": "Simplified interface for research, writing, and everyday tasks.",
+      "chinese": "适用于研究、写作和日常任务的简洁界面。"
+    },
+    {
+      "scope": "settings",
+      "english": "Full interface for coding, developer tools, and managing agents.",
+      "chinese": "提供编程、开发工具和智能体管理功能的完整界面。"
+    },
+    {
+      "scope": "settings",
       "english": "Use",
       "chinese": "使用"
     },
@@ -2770,6 +2801,21 @@
     }
   ],
   "rules": [
+    {
+      "scope": "global",
+      "pattern": "/^Good to see you, (.+)\\. What's next\\?$/",
+      "replacement": "很高兴见到你，$1。接下来做什么？"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^Welcome back, (.+)\\. Where should we pick up\\?$/",
+      "replacement": "欢迎回来，$1。我们从哪里继续？"
+    },
+    {
+      "scope": "global",
+      "pattern": "/^See all \\((\\d+)\\)$/",
+      "replacement": "显示全部（$1）"
+    },
     {
       "scope": "global",
       "pattern": "/^See (\\d+) more$/",

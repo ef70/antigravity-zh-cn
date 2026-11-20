@@ -1,9 +1,10 @@
 # 中文词条表
 
-本表由 npm run catalog 从汉化源码生成，共 551 条作用域词条。
+本表由 npm run catalog 从汉化源码生成，共 557 条作用域词条。
 
 | 作用域 | 英文 | 中文 |
 | --- | --- | --- |
+| global | Auto | 自动 |
 | global | Add Context | 添加上下文 |
 | global | Folder | 文件夹 |
 | global | Mentions | 提及 |
@@ -377,6 +378,11 @@
 | global | Configure allowed commands outside the sandbox. | 配置允许在沙盒外执行的命令。 |
 | global | Configure allowed and denied URLs for browser actions. | 配置允许或拒绝执行浏览器操作的网址。 |
 | global | Configure allowed and denied URLs for browser actuation. | 配置允许或拒绝执行浏览器操作的网址。 |
+| settings | Interface Layout | 界面布局 |
+| settings | Knowledge Work | 知识工作 |
+| settings | Software Engineering | 软件工程 |
+| settings | Simplified interface for research, writing, and everyday tasks. | 适用于研究、写作和日常任务的简洁界面。 |
+| settings | Full interface for coding, developer tools, and managing agents. | 提供编程、开发工具和智能体管理功能的完整界面。 |
 | settings | Use | 使用 |
 | settings | later. | 中更改。 |
 | settings | Mute Voice Mic | 将语音麦克风静音 |
