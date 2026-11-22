@@ -1,6 +1,7 @@
 {
-  "patchVersion": "2026.11.20.1",
+  "patchVersion": "2026.11.22.1",
   "supportedVersions": [
+    "2.34.0",
     "2.33.0",
     "2.29.0"
   ],
