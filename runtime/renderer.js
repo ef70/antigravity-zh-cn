@@ -376,6 +376,52 @@ const zhCnText = {
     'Configure allowed and denied URLs for browser actuation.': '配置允许或拒绝执行浏览器操作的网址。',
 };
 const zhCnSettingsFragments = {
+    'Permission preset': '权限预设',
+    'Search shortcuts': '搜索快捷键',
+    'Search shortcuts...': '搜索快捷键……',
+    'Press Enter to send, Shift+Enter for a new line.': '按 Enter 发送，按 Shift+Enter 换行。',
+    'Press Ctrl+Enter to send, Enter for a new line.': '按 Ctrl+Enter 发送，按 Enter 换行。',
+    'Font Size': '字号',
+    'Background color picker': '选择背景色',
+    'Foreground color picker': '选择前景色',
+    'Accent color picker': '选择强调色',
+    'Settings for conversations outside of projects.': '管理不属于任何项目的对话设置。',
+    'Edit project name': '编辑项目名称',
+    'Remove resource': '移除资源',
+    'Delete project': '删除项目',
+    'No token data available.': '暂无 token 用量数据。',
+    'Configure what the agent can do in local and remote conversations.': '设置智能体在本机和远程对话中可以执行的操作。',
+    'This computer': '本机',
+    Remote: '远程',
+    'Controls permissions for remote conversations.': '管理远程对话中的权限。',
+    Advanced: '高级设置',
+    'Input Box': '输入框',
+    'Queued messages': '排队消息',
+    'Choose which key sends a message in the chat composer.': '选择在对话输入框中发送消息的按键。',
+    'Open Command Palette': '打开命令面板',
+    'Close Tab': '关闭标签页',
+    'Open Keyboard Shortcuts': '打开快捷键设置',
+    'Submit Prompt (Alternate to Enter)': '发送消息（Enter 之外的快捷键）',
+    'Enter always submits. This adds a second shortcut.': 'Enter 仍可发送消息；此项用于添加另一个快捷键。',
+    'Jump to Previous Prompt': '跳转到上一条提问',
+    'Jump to Next Prompt': '跳转到下一条提问',
+    'Cancel Generation': '取消生成',
+    'Toggle Project Selector': '切换项目选择器',
+    'Find in Conversation': '在对话中查找',
+    'Comment on Selection': '评论选中的内容',
+    'Side Question Selection': '针对选中内容提问',
+    'Split Conversation Horizontally': '水平拆分对话',
+    'Split Conversation Vertically': '垂直拆分对话',
+    'Pin / Unpin Conversation': '置顶或取消置顶对话',
+    'Orchestrator Settings': '编排器设置',
+    'Choose the models Orchestrator uses. A larger, smarter orchestrator model with a faster, cheaper executor gives high quality for fewer tokens.': '选择编排器使用的模型。将能力更强的编排模型与速度更快、成本更低的执行模型搭配，可用更少的 token 获得高质量结果。',
+    'Orchestrator Model': '编排模型',
+    'Plans the work, makes design decisions, and reviews the result. Pick a top-tier model. You can also pick one per conversation from the Orchestrator row in the model menu.': '负责制定计划、作出设计决策并审阅结果。建议选择能力较强的模型，也可以在每个对话的模型菜单中通过「编排器」一项单独选择。',
+    'Executor Model': '执行模型',
+    'Carries out the plan: searches, edits, builds, and tests. Pick a faster, cheaper model.': '负责执行计划，包括搜索、编辑、构建和测试。建议选择速度更快、成本更低的模型。',
+    'Extra High': '极高',
+    'Configure built-in browser, link opening, and browser subagent preferences.': '配置内置浏览器、链接打开方式和浏览器子智能体偏好。',
+    'Configure allowed and denied URLs for the browser subagent. It runs in the built-in browser, so no separate browser install is needed.': '设置浏览器子智能体允许和禁止访问的网址。它在内置浏览器中运行，无需另外安装浏览器。',
     'Interface Layout': '界面布局',
     'Knowledge Work': '知识工作',
     'Software Engineering': '软件工程',
@@ -544,6 +590,7 @@ const zhCnPatterns = [
     [/^See (\d+) more$/, '再显示 $1 项'],
     [/^(\d+) tools? enabled$/, '已启用 $1 个工具'],
     [/^Hi (.+), what can we get done today\?$/, '你好，$1，今天需要完成什么？'],
+    [/^Hey (.+), what should we build today\?$/, '你好，$1，今天想做些什么？'],
     [/^Updated ((?:\d{4}年)?\d{1,2}月\d{1,2}日[,，]?\s*\d{1,2}:\d{2}(?::\d{2})?)$/, '更新于 $1'],
     [/^(Send Message|Record Audio|Toggle Auxiliary Pane|Toggle Side Panel|Toggle Overview Panel|Archive Conversation|Pin Conversation|Unpin Conversation|Maximize Pane)(\s+(?:Enter|(?:Ctrl|Alt|Shift|Meta|Cmd)\+\S+))$/, (_, action, shortcut) => `${zhCnText[action]}${shortcut}`],
     [/^(\d+(?:\.\d+)?%) left$/, '$1 剩余'],
@@ -572,7 +619,82 @@ const zhCnPatterns = [
     [/^You have used some of your weekly limit, it will fully refresh in (\d+) days?, (\d+) hours?\.$/, '你已使用部分每周额度，将在 $1 天 $2 小时后完全恢复。'],
     [/^You have used some of your 5-hour limit, it will fully refresh in (\d+) hours?, (\d+) minutes?\.$/, '你已使用部分五小时额度，将在 $1 小时 $2 分钟后完全恢复。'],
 ];
+const zhCnAutomationText = {
+    'Add automation': '新建自动化任务',
+    New: '新建',
+    Create: '创建',
+    Name: '名称',
+    Untitled: '未命名',
+    'This computer': '本机',
+    'Uses your local files and tools. Schedules only.': '使用本机文件和工具，仅支持按计划运行。',
+    Trigger: '触发方式',
+    Scheduled: '按计划运行',
+    'Every day': '每天',
+    at: '于',
+    Time: '时间',
+    Instructions: '任务指令',
+    Prompt: '提示词',
+    'What should the agent do on each run? For example: summarize new bugs assigned to me and anything that changed overnight.': '每次运行时，智能体应做什么？例如：汇总新分配给我的缺陷和昨晚发生的变更。',
+};
+const zhCnMarketplaceText = {
+    'Customizations views': '自定义视图',
+    'Loading available plugins...': '正在加载可用插件……',
+    'Plugins in Featured': '精选插件',
+    Add: '添加',
+    Create: '创建',
+    'Create plugin': '创建插件',
+    'MCP error': 'MCP 错误',
+    'Connect to Google Workspace, including Docs, Sheets, Slides, Drive, Calendar, and Gmail.': '连接 Google Workspace，包括 Google 文档、表格、幻灯片、云端硬盘、日历和 Gmail。',
+    'Search, read, draft, and send emails in Gmail.': '在 Gmail 中搜索、阅读、起草和发送邮件。',
+    'Core tools and knowledge required to develop for Android.': '提供 Android 开发所需的核心工具与知识。',
+    'Reliable automation, in-depth debugging, and performance analysis in Chrome using Chrome DevTools and Puppeteer': '通过 Chrome DevTools 和 Puppeteer 在 Chrome 中进行自动化操作、深入调试和性能分析。',
+    'Using the Google Antigravity Python SDK to build AI agents': '使用 Google Antigravity Python SDK 构建 AI 智能体。',
+    'Design, Creative & Media': '设计、创意与媒体',
+    'Design, creative, and media tools.': '设计、创意和媒体工具。',
+    'Productivity & Project Management': '效率与项目管理',
+    'Plan work, track issues, sign documents, and manage your notes and files.': '制定工作计划、跟踪问题、签署文档并管理笔记和文件。',
+    'Agent skills, databases, and interactive viewers for scientific research.': '用于科学研究的智能体技能、数据库与交互式查看器。',
+    'Antigravity for science highlights, and an overview of the main science plugins.': '介绍 Antigravity 的科研功能以及主要科研插件。',
+    'Search scientific papers, clinical trials, FDA records, and historical texts.': '搜索科研论文、临床试验、FDA 记录和历史文献。',
+    'Connect Antigravity to your Notion workspace with the Notion MCP server, plus skills for research, documentation, meeting prep, specs, trackers, and project updates.': '通过 Notion MCP 服务器将 Antigravity 连接到你的 Notion 工作区，并使用调研、文档、会议准备、规格编写、进度跟踪和项目更新等技能。',
+    'Official plugin for Dart and Flutter that installs Flutter/Dart Skills, Rules, Custom Agents, and Dart MCP server for building natively compiled, visually stunning applications for mobile, web, desktop, and embedded devices from a single codebase': 'Dart 和 Flutter 官方插件，安装 Flutter/Dart 技能、规则、自定义智能体和 Dart MCP 服务器，帮助你用同一套代码构建面向移动端、网页、桌面和嵌入式设备的原生编译应用。',
+};
+const zhCnMarketplacePatterns = [
+    [/^More actions for (.+)$/, '$1 的更多操作'],
+    [/^Details for (.+)$/, '查看 $1 详情'],
+    [/^(?:Add|Install) (.+)$/, '安装 $1'],
+    [/^See (\d+) more plugins?$/, '再显示 $1 个插件'],
+    [/^See more in Build with Google$/, '查看更多 Google 开发工具'],
+    [/^(\d+) MCP servers? failed to start$/, '$1 个 MCP 服务器未能启动'],
+];
+const zhCnSidebarAgePattern = [/^(\d+)(mo|s|m|h|d|w|y)$/, (_, value, unit) => {
+    const units = { s: '秒', m: '分钟', h: '小时', d: '天', w: '周', mo: '个月', y: '年' };
+    return `${value} ${units[unit]}前`;
+}];
+const zhCnUiAttributes = {
+    'Announcements and tips': '公告与提示',
+    Breadcrumb: '导航路径',
+    'Response actions': '回复操作',
+    'Undo to this point': '撤销到这里',
+    'Table options': '表格选项',
+    'Search or enter a URL': '搜索或输入网址',
+};
+const zhCnModelMenuText = {
+    Orchestrator: '编排器',
+    'Extra High': '极高',
+    Unavailable: '不可用',
+};
+const zhCnButtonText = {
+    'Side Question': '旁支提问',
+    'No more older messages': '没有更早的消息',
+};
+const zhCnUiAttributePatterns = [
+    [/^No more older messages, showing (\d+) of (\d+)$/, '没有更早的消息，已显示 $1 条，共 $2 条'],
+];
 const zhCnSettingsPatterns = [
+    [/^Add shortcut for (.+)$/, (_, command) => `为「${translateString(command, true)}」添加快捷键`],
+    [/^Remove shortcut (.+?) for (.+)$/, (_, keys, command) => `移除「${translateString(command, true)}」的快捷键 ${keys}`],
+    [/^Shortcut (.+?) for (.+)$/, (_, keys, command) => `「${translateString(command, true)}」的快捷键：${keys}`],
     [/^Permanently delete (.+) including (\d+) active conversations?\.$/, '永久删除 $1，包括 $2 个进行中的对话。'],
     [/^including (\d+) active conversations?\.$/, '，包括 $1 个进行中的对话。'],
     [/^(\d+) active conversations?\.$/, '$1 个进行中的对话。'],
@@ -613,12 +735,48 @@ function translateString(value, allowSettingsFragments = false) {
     const suffix = value.match(/\s*$/)?.[0] ?? '';
     return `${prefix}${translated}${suffix}`;
 }
-function translateElementAttributes(element) {
+function translateScopedValue(value, entries, patterns = []) {
+    const trimmed = value.trim();
+    let result = Object.hasOwn(entries, trimmed) ? entries[trimmed] : trimmed;
+    for (const [pattern, replacement] of patterns) {
+        if (result !== trimmed) break;
+        if (pattern.test(trimmed)) result = trimmed.replace(pattern, replacement);
+    }
+    return result === trimmed ? value : value.replace(trimmed, () => result);
+}
+function translateUiValue(value, element, attribute = false) {
     const allowSettingsFragments = !!element.closest?.('[role="dialog"]');
+    const pathname = element.ownerDocument?.location?.pathname;
+    const sidebar = element.closest?.('[aria-label="Sidebar"]');
+    let translated = value;
+    if (attribute) translated = translateScopedValue(value, zhCnUiAttributes, zhCnUiAttributePatterns);
+    if (translated !== value) return translated;
+    if (!attribute && sidebar && !element.closest?.('a, button')) {
+        translated = translateScopedValue(value, {}, [zhCnSidebarAgePattern]);
+    } else if (!sidebar && !allowSettingsFragments && pathname === '/sidecars' && Object.hasOwn(zhCnAutomationText, value.trim())) {
+        const label = value.trim();
+        if (label === 'Add automation' || (label === 'New' && element.closest?.('button'))
+            || element.ownerDocument.querySelector('input[placeholder="Untitled"], input[placeholder="未命名"]')) {
+            translated = translateScopedValue(value, zhCnAutomationText);
+        }
+    } else if (!sidebar && (pathname === '/customizations' || pathname?.startsWith('/customizations/'))) {
+        if (!['Add', 'Create'].includes(value.trim()) || element.closest?.('button')) {
+            translated = translateScopedValue(value, zhCnMarketplaceText, attribute ? zhCnMarketplacePatterns : []);
+        }
+    }
+    if (translated === value && element.closest?.('[role="menu"], [role="listbox"]')) {
+        translated = translateScopedValue(value, zhCnModelMenuText);
+    }
+    if (translated === value && element.closest?.('button')) {
+        translated = translateScopedValue(value, zhCnButtonText);
+    }
+    return translated === value ? translateString(value, allowSettingsFragments) : translated;
+}
+function translateElementAttributes(element) {
     for (const attr of ['title', 'aria-label', 'placeholder']) {
         const value = element.getAttribute?.(attr);
         if (value) {
-            const translated = translateString(value, allowSettingsFragments);
+            const translated = translateUiValue(value, element, true);
             if (translated !== value) {
                 element.setAttribute(attr, translated);
             }
@@ -630,8 +788,7 @@ function translateNode(node) {
         if (node.parentElement?.closest?.('script, style, textarea, code, pre, [contenteditable="true"]')) {
             return;
         }
-        const allowSettingsFragments = !!node.parentElement?.closest?.('[role="dialog"]');
-        const translated = translateString(node.nodeValue || '', allowSettingsFragments);
+        const translated = node.parentElement ? translateUiValue(node.nodeValue || '', node.parentElement) : node.nodeValue;
         if (translated !== node.nodeValue) {
             node.nodeValue = translated;
         }

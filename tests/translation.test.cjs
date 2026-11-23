@@ -29,16 +29,17 @@ class Element {
         this.tagName = tagName.toUpperCase();
         this.parentElement = parentElement;
         this.attributes = { ...attributes };
+        this.ownerDocument = parentElement?.ownerDocument;
         this.childNodes = [];
         this.value = '';
     }
     closest(selector) {
         for (let element = this; element; element = element.parentElement) {
-            if (selector === '[role="dialog"]') {
-                if (element.attributes.role === 'dialog') return element;
-            } else if (selector.split(',').some(tag => tag.trim() === '[contenteditable="true"]' ? element.attributes.contenteditable === 'true' : tag.trim().toUpperCase() === element.tagName)) {
-                return element;
-            }
+            if (selector.split(',').some(part => {
+                const term = part.trim();
+                const attr = term.match(/^\[([\w-]+)="([^"]+)"\]$/);
+                return attr ? element.getAttribute(attr[1]) === attr[2] : term.toUpperCase() === element.tagName;
+            })) return element;
         }
         return null;
     }
@@ -59,15 +60,92 @@ test('feedback account translation preserves the dynamic address', () => {
     assert.equal(translateString('Send feedback as user@example.test', true), '\u4ee5 user@example.test \u53d1\u9001\u53cd\u9988');
 });
 
+test('general permissions and shortcut labels translate without changing key chords', () => {
+    const dialog = new Element('div', null, { role: 'dialog' });
+    for (const [label, expected, key] of [
+        ['This computer', '本机', 'Enter'],
+        ['Remote', '远程', 'Ctrl+Enter'],
+        ['Open Command Palette', '打开命令面板', 'Ctrl + Shift + P'],
+        ['Submit Prompt (Alternate to Enter)', '发送消息（Enter 之外的快捷键）', 'Enter'],
+        ['Jump to Previous Prompt', '跳转到上一条提问', 'Ctrl + Alt + ['],
+        ['Split Conversation Vertically', '垂直拆分对话', 'Ctrl + Shift + D'],
+    ]) {
+        const row = new Element('div', dialog);
+        const labelNode = { nodeType: 3, nodeValue: label, parentElement: row };
+        const keyNode = { nodeType: 3, nodeValue: key, parentElement: row };
+        row.childNodes.push(labelNode, keyNode);
+        translateNode(row);
+        assert.equal(labelNode.nodeValue, expected);
+        assert.equal(keyNode.nodeValue, key);
+        assert.equal(translateString(label), label);
+    }
+});
+
 test('2.33 layout and greetings retain names and counts', () => {
     assert.equal(translateString('Auto'), '自动');
     assert.equal(translateString('See all (8)'), '显示全部（8）');
     assert.equal(translateString('Welcome back, Example. Where should we pick up?'), '欢迎回来，Example。我们从哪里继续？');
     assert.equal(translateString("Good to see you, Example. What's next?"), '很高兴见到你，Example。接下来做什么？');
+    assert.equal(translateString('Hey Example, what should we build today?'), '你好，Example，今天想做些什么？');
+    assert.equal(translateString('Permission preset', true), '权限预设');
     assert.equal(translateString('Interface Layout', true), '界面布局');
     assert.equal(translateString('Interface Layout'), 'Interface Layout');
     assert.equal(translateString('Knowledge Work', true), '知识工作');
     assert.equal(translateString('Software Engineering', true), '软件工程');
+});
+
+test('orchestrator and browser descriptions translate without rewriting model or path names', () => {
+    assert.equal(translateString('Orchestrator Settings', true), '编排器设置');
+    assert.equal(translateString('Executor Model', true), '执行模型');
+    assert.equal(translateString('Extra High', true), '极高');
+    assert.equal(translateString('Gemini 4 Neon', true), 'Gemini 4 Neon');
+    assert.equal(translateString('Gemini 4 Hydrogen', true), 'Gemini 4 Hydrogen');
+    assert.equal(translateString('D:/Example/Downloads', true), 'D:/Example/Downloads');
+    assert.equal(translateString('Configure built-in browser, link opening, and browser subagent preferences.', true), '配置内置浏览器、链接打开方式和浏览器子智能体偏好。');
+});
+
+test('shortcut controls translate accessible names, preserving the chord and normal text', () => {
+    const dialog = new Element('div', null, { role: 'dialog' });
+    const shortcut = new Element('button', dialog, { 'aria-label': 'Remove shortcut Ctrl+Shift+P for Open Command Palette' });
+    translateNode(shortcut);
+    assert.equal(shortcut.getAttribute('aria-label'), '移除「打开命令面板」的快捷键 Ctrl+Shift+P');
+    assert.equal(translateString('Remove shortcut Ctrl+Shift+P for Open Command Palette'), 'Remove shortcut Ctrl+Shift+P for Open Command Palette');
+});
+
+test('new interface rules respect route, control type and sidebar link boundaries', () => {
+    function display(element, value) {
+        const node = { nodeType: 3, parentElement: element, nodeValue: value };
+        translateNode(node);
+        return node.nodeValue;
+    }
+    const root = new Element('div');
+    let editing = true;
+    root.ownerDocument = { location: { pathname: '/sidecars' }, querySelector: () => editing };
+    const text = new Element('div', root);
+    const editor = new Element('input', root, { placeholder: 'Untitled' });
+    editor.value = 'Untitled';
+    translateNode(editor);
+    assert.equal(editor.getAttribute('placeholder'), '未命名');
+    assert.equal(editor.value, 'Untitled');
+    assert.equal(display(text, 'Trigger'), '触发方式');
+    editing = false;
+    assert.equal(display(text, 'Trigger'), 'Trigger');
+    root.ownerDocument.location.pathname = '/customizations/installed';
+    assert.equal(display(text, 'Create'), 'Create');
+    assert.equal(display(new Element('button', root), 'Create'), '创建');
+    const plugin = new Element('button', root, { 'aria-label': 'More actions for Google Drive' });
+    translateNode(plugin);
+    assert.equal(plugin.getAttribute('aria-label'), 'Google Drive 的更多操作');
+    const sidebar = new Element('nav', root, { 'aria-label': 'Sidebar' });
+    assert.equal(display(new Element('span', sidebar), '2mo'), '2 个月前');
+    assert.equal(display(new Element('a', sidebar), '2mo'), '2mo');
+    assert.equal(display(text, '2mo'), '2mo');
+    const menu = new Element('div', root, { role: 'menu' });
+    assert.equal(display(new Element('span', menu), 'Extra High'), '极高');
+    assert.equal(display(new Element('span', menu), 'Gemini 4 Neon'), 'Gemini 4 Neon');
+    assert.equal(display(text, 'Extra High'), 'Extra High');
+    assert.equal(display(text, 'Side Question'), 'Side Question');
+    assert.equal(display(new Element('button', root), 'Side Question'), '旁支提问');
 });
 
 test('context menus and plugin controls translate while raw connection errors stay intact', () => {

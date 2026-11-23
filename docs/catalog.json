@@ -1,14 +1,14 @@
 {
-  "patchVersion": "2026.11.22.1",
+  "patchVersion": "2026.11.23.1",
   "supportedVersions": [
     "2.34.0",
     "2.33.0",
     "2.29.0"
   ],
   "counts": {
-    "entries": 557,
-    "uniqueEnglish": 538,
-    "dynamicRules": 32
+    "entries": 650,
+    "uniqueEnglish": 627,
+    "dynamicRules": 44
   },
   "settingsRule": {
     "pattern": "/^(\\d+) projects?$/",
@@ -1887,6 +1887,236 @@
     },
     {
       "scope": "settings",
+      "english": "Permission preset",
+      "chinese": "权限预设"
+    },
+    {
+      "scope": "settings",
+      "english": "Search shortcuts",
+      "chinese": "搜索快捷键"
+    },
+    {
+      "scope": "settings",
+      "english": "Search shortcuts...",
+      "chinese": "搜索快捷键……"
+    },
+    {
+      "scope": "settings",
+      "english": "Press Enter to send, Shift+Enter for a new line.",
+      "chinese": "按 Enter 发送，按 Shift+Enter 换行。"
+    },
+    {
+      "scope": "settings",
+      "english": "Press Ctrl+Enter to send, Enter for a new line.",
+      "chinese": "按 Ctrl+Enter 发送，按 Enter 换行。"
+    },
+    {
+      "scope": "settings",
+      "english": "Font Size",
+      "chinese": "字号"
+    },
+    {
+      "scope": "settings",
+      "english": "Background color picker",
+      "chinese": "选择背景色"
+    },
+    {
+      "scope": "settings",
+      "english": "Foreground color picker",
+      "chinese": "选择前景色"
+    },
+    {
+      "scope": "settings",
+      "english": "Accent color picker",
+      "chinese": "选择强调色"
+    },
+    {
+      "scope": "settings",
+      "english": "Settings for conversations outside of projects.",
+      "chinese": "管理不属于任何项目的对话设置。"
+    },
+    {
+      "scope": "settings",
+      "english": "Edit project name",
+      "chinese": "编辑项目名称"
+    },
+    {
+      "scope": "settings",
+      "english": "Remove resource",
+      "chinese": "移除资源"
+    },
+    {
+      "scope": "settings",
+      "english": "Delete project",
+      "chinese": "删除项目"
+    },
+    {
+      "scope": "settings",
+      "english": "No token data available.",
+      "chinese": "暂无 token 用量数据。"
+    },
+    {
+      "scope": "settings",
+      "english": "Configure what the agent can do in local and remote conversations.",
+      "chinese": "设置智能体在本机和远程对话中可以执行的操作。"
+    },
+    {
+      "scope": "settings",
+      "english": "This computer",
+      "chinese": "本机"
+    },
+    {
+      "scope": "settings",
+      "english": "Remote",
+      "chinese": "远程"
+    },
+    {
+      "scope": "settings",
+      "english": "Controls permissions for remote conversations.",
+      "chinese": "管理远程对话中的权限。"
+    },
+    {
+      "scope": "settings",
+      "english": "Advanced",
+      "chinese": "高级设置"
+    },
+    {
+      "scope": "settings",
+      "english": "Input Box",
+      "chinese": "输入框"
+    },
+    {
+      "scope": "settings",
+      "english": "Queued messages",
+      "chinese": "排队消息"
+    },
+    {
+      "scope": "settings",
+      "english": "Choose which key sends a message in the chat composer.",
+      "chinese": "选择在对话输入框中发送消息的按键。"
+    },
+    {
+      "scope": "settings",
+      "english": "Open Command Palette",
+      "chinese": "打开命令面板"
+    },
+    {
+      "scope": "settings",
+      "english": "Close Tab",
+      "chinese": "关闭标签页"
+    },
+    {
+      "scope": "settings",
+      "english": "Open Keyboard Shortcuts",
+      "chinese": "打开快捷键设置"
+    },
+    {
+      "scope": "settings",
+      "english": "Submit Prompt (Alternate to Enter)",
+      "chinese": "发送消息（Enter 之外的快捷键）"
+    },
+    {
+      "scope": "settings",
+      "english": "Enter always submits. This adds a second shortcut.",
+      "chinese": "Enter 仍可发送消息；此项用于添加另一个快捷键。"
+    },
+    {
+      "scope": "settings",
+      "english": "Jump to Previous Prompt",
+      "chinese": "跳转到上一条提问"
+    },
+    {
+      "scope": "settings",
+      "english": "Jump to Next Prompt",
+      "chinese": "跳转到下一条提问"
+    },
+    {
+      "scope": "settings",
+      "english": "Cancel Generation",
+      "chinese": "取消生成"
+    },
+    {
+      "scope": "settings",
+      "english": "Toggle Project Selector",
+      "chinese": "切换项目选择器"
+    },
+    {
+      "scope": "settings",
+      "english": "Find in Conversation",
+      "chinese": "在对话中查找"
+    },
+    {
+      "scope": "settings",
+      "english": "Comment on Selection",
+      "chinese": "评论选中的内容"
+    },
+    {
+      "scope": "settings",
+      "english": "Side Question Selection",
+      "chinese": "针对选中内容提问"
+    },
+    {
+      "scope": "settings",
+      "english": "Split Conversation Horizontally",
+      "chinese": "水平拆分对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Split Conversation Vertically",
+      "chinese": "垂直拆分对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Pin / Unpin Conversation",
+      "chinese": "置顶或取消置顶对话"
+    },
+    {
+      "scope": "settings",
+      "english": "Orchestrator Settings",
+      "chinese": "编排器设置"
+    },
+    {
+      "scope": "settings",
+      "english": "Choose the models Orchestrator uses. A larger, smarter orchestrator model with a faster, cheaper executor gives high quality for fewer tokens.",
+      "chinese": "选择编排器使用的模型。将能力更强的编排模型与速度更快、成本更低的执行模型搭配，可用更少的 token 获得高质量结果。"
+    },
+    {
+      "scope": "settings",
+      "english": "Orchestrator Model",
+      "chinese": "编排模型"
+    },
+    {
+      "scope": "settings",
+      "english": "Plans the work, makes design decisions, and reviews the result. Pick a top-tier model. You can also pick one per conversation from the Orchestrator row in the model menu.",
+      "chinese": "负责制定计划、作出设计决策并审阅结果。建议选择能力较强的模型，也可以在每个对话的模型菜单中通过「编排器」一项单独选择。"
+    },
+    {
+      "scope": "settings",
+      "english": "Executor Model",
+      "chinese": "执行模型"
+    },
+    {
+      "scope": "settings",
+      "english": "Carries out the plan: searches, edits, builds, and tests. Pick a faster, cheaper model.",
+      "chinese": "负责执行计划，包括搜索、编辑、构建和测试。建议选择速度更快、成本更低的模型。"
+    },
+    {
+      "scope": "settings",
+      "english": "Extra High",
+      "chinese": "极高"
+    },
+    {
+      "scope": "settings",
+      "english": "Configure built-in browser, link opening, and browser subagent preferences.",
+      "chinese": "配置内置浏览器、链接打开方式和浏览器子智能体偏好。"
+    },
+    {
+      "scope": "settings",
+      "english": "Configure allowed and denied URLs for the browser subagent. It runs in the built-in browser, so no separate browser install is needed.",
+      "chinese": "设置浏览器子智能体允许和禁止访问的网址。它在内置浏览器中运行，无需另外安装浏览器。"
+    },
+    {
+      "scope": "settings",
       "english": "Interface Layout",
       "chinese": "界面布局"
     },
@@ -2681,6 +2911,241 @@
       "chinese": "申请因法律原因修改内容。"
     },
     {
+      "scope": "automation",
+      "english": "Add automation",
+      "chinese": "新建自动化任务"
+    },
+    {
+      "scope": "automation",
+      "english": "New",
+      "chinese": "新建"
+    },
+    {
+      "scope": "automation",
+      "english": "Create",
+      "chinese": "创建"
+    },
+    {
+      "scope": "automation",
+      "english": "Name",
+      "chinese": "名称"
+    },
+    {
+      "scope": "automation",
+      "english": "Untitled",
+      "chinese": "未命名"
+    },
+    {
+      "scope": "automation",
+      "english": "This computer",
+      "chinese": "本机"
+    },
+    {
+      "scope": "automation",
+      "english": "Uses your local files and tools. Schedules only.",
+      "chinese": "使用本机文件和工具，仅支持按计划运行。"
+    },
+    {
+      "scope": "automation",
+      "english": "Trigger",
+      "chinese": "触发方式"
+    },
+    {
+      "scope": "automation",
+      "english": "Scheduled",
+      "chinese": "按计划运行"
+    },
+    {
+      "scope": "automation",
+      "english": "Every day",
+      "chinese": "每天"
+    },
+    {
+      "scope": "automation",
+      "english": "at",
+      "chinese": "于"
+    },
+    {
+      "scope": "automation",
+      "english": "Time",
+      "chinese": "时间"
+    },
+    {
+      "scope": "automation",
+      "english": "Instructions",
+      "chinese": "任务指令"
+    },
+    {
+      "scope": "automation",
+      "english": "Prompt",
+      "chinese": "提示词"
+    },
+    {
+      "scope": "automation",
+      "english": "What should the agent do on each run? For example: summarize new bugs assigned to me and anything that changed overnight.",
+      "chinese": "每次运行时，智能体应做什么？例如：汇总新分配给我的缺陷和昨晚发生的变更。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Customizations views",
+      "chinese": "自定义视图"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Loading available plugins...",
+      "chinese": "正在加载可用插件……"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Plugins in Featured",
+      "chinese": "精选插件"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Add",
+      "chinese": "添加"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Create",
+      "chinese": "创建"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Create plugin",
+      "chinese": "创建插件"
+    },
+    {
+      "scope": "marketplace",
+      "english": "MCP error",
+      "chinese": "MCP 错误"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Connect to Google Workspace, including Docs, Sheets, Slides, Drive, Calendar, and Gmail.",
+      "chinese": "连接 Google Workspace，包括 Google 文档、表格、幻灯片、云端硬盘、日历和 Gmail。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Search, read, draft, and send emails in Gmail.",
+      "chinese": "在 Gmail 中搜索、阅读、起草和发送邮件。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Core tools and knowledge required to develop for Android.",
+      "chinese": "提供 Android 开发所需的核心工具与知识。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Reliable automation, in-depth debugging, and performance analysis in Chrome using Chrome DevTools and Puppeteer",
+      "chinese": "通过 Chrome DevTools 和 Puppeteer 在 Chrome 中进行自动化操作、深入调试和性能分析。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Using the Google Antigravity Python SDK to build AI agents",
+      "chinese": "使用 Google Antigravity Python SDK 构建 AI 智能体。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Design, Creative & Media",
+      "chinese": "设计、创意与媒体"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Design, creative, and media tools.",
+      "chinese": "设计、创意和媒体工具。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Productivity & Project Management",
+      "chinese": "效率与项目管理"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Plan work, track issues, sign documents, and manage your notes and files.",
+      "chinese": "制定工作计划、跟踪问题、签署文档并管理笔记和文件。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Agent skills, databases, and interactive viewers for scientific research.",
+      "chinese": "用于科学研究的智能体技能、数据库与交互式查看器。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Antigravity for science highlights, and an overview of the main science plugins.",
+      "chinese": "介绍 Antigravity 的科研功能以及主要科研插件。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Search scientific papers, clinical trials, FDA records, and historical texts.",
+      "chinese": "搜索科研论文、临床试验、FDA 记录和历史文献。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Connect Antigravity to your Notion workspace with the Notion MCP server, plus skills for research, documentation, meeting prep, specs, trackers, and project updates.",
+      "chinese": "通过 Notion MCP 服务器将 Antigravity 连接到你的 Notion 工作区，并使用调研、文档、会议准备、规格编写、进度跟踪和项目更新等技能。"
+    },
+    {
+      "scope": "marketplace",
+      "english": "Official plugin for Dart and Flutter that installs Flutter/Dart Skills, Rules, Custom Agents, and Dart MCP server for building natively compiled, visually stunning applications for mobile, web, desktop, and embedded devices from a single codebase",
+      "chinese": "Dart 和 Flutter 官方插件，安装 Flutter/Dart 技能、规则、自定义智能体和 Dart MCP 服务器，帮助你用同一套代码构建面向移动端、网页、桌面和嵌入式设备的原生编译应用。"
+    },
+    {
+      "scope": "uiAttributes",
+      "english": "Announcements and tips",
+      "chinese": "公告与提示"
+    },
+    {
+      "scope": "uiAttributes",
+      "english": "Breadcrumb",
+      "chinese": "导航路径"
+    },
+    {
+      "scope": "uiAttributes",
+      "english": "Response actions",
+      "chinese": "回复操作"
+    },
+    {
+      "scope": "uiAttributes",
+      "english": "Undo to this point",
+      "chinese": "撤销到这里"
+    },
+    {
+      "scope": "uiAttributes",
+      "english": "Table options",
+      "chinese": "表格选项"
+    },
+    {
+      "scope": "uiAttributes",
+      "english": "Search or enter a URL",
+      "chinese": "搜索或输入网址"
+    },
+    {
+      "scope": "modelMenu",
+      "english": "Orchestrator",
+      "chinese": "编排器"
+    },
+    {
+      "scope": "modelMenu",
+      "english": "Extra High",
+      "chinese": "极高"
+    },
+    {
+      "scope": "modelMenu",
+      "english": "Unavailable",
+      "chinese": "不可用"
+    },
+    {
+      "scope": "buttons",
+      "english": "Side Question",
+      "chinese": "旁支提问"
+    },
+    {
+      "scope": "buttons",
+      "english": "No more older messages",
+      "chinese": "没有更早的消息"
+    },
+    {
       "scope": "native",
       "english": "Rename",
       "chinese": "重命名"
@@ -2834,6 +3299,11 @@
     },
     {
       "scope": "global",
+      "pattern": "/^Hey (.+), what should we build today\\?$/",
+      "replacement": "你好，$1，今天想做些什么？"
+    },
+    {
+      "scope": "global",
       "pattern": "/^Updated ((?:\\d{4}年)?\\d{1,2}月\\d{1,2}日[,，]?\\s*\\d{1,2}:\\d{2}(?::\\d{2})?)$/",
       "replacement": "更新于 $1"
     },
@@ -2934,6 +3404,21 @@
     },
     {
       "scope": "settings",
+      "pattern": "/^Add shortcut for (.+)$/",
+      "replacement": "(_, command) => `为「${translateString(command, true)}」添加快捷键`"
+    },
+    {
+      "scope": "settings",
+      "pattern": "/^Remove shortcut (.+?) for (.+)$/",
+      "replacement": "(_, keys, command) => `移除「${translateString(command, true)}」的快捷键 ${keys}`"
+    },
+    {
+      "scope": "settings",
+      "pattern": "/^Shortcut (.+?) for (.+)$/",
+      "replacement": "(_, keys, command) => `「${translateString(command, true)}」的快捷键：${keys}`"
+    },
+    {
+      "scope": "settings",
       "pattern": "/^Permanently delete (.+) including (\\d+) active conversations?\\.$/",
       "replacement": "永久删除 $1，包括 $2 个进行中的对话。"
     },
@@ -2951,6 +3436,46 @@
       "scope": "settings",
       "pattern": "/^(\\d+) active conversations?$/",
       "replacement": "$1 个进行中的对话"
+    },
+    {
+      "scope": "marketplaceAttributes",
+      "pattern": "/^More actions for (.+)$/",
+      "replacement": "$1 的更多操作"
+    },
+    {
+      "scope": "marketplaceAttributes",
+      "pattern": "/^Details for (.+)$/",
+      "replacement": "查看 $1 详情"
+    },
+    {
+      "scope": "marketplaceAttributes",
+      "pattern": "/^(?:Add|Install) (.+)$/",
+      "replacement": "安装 $1"
+    },
+    {
+      "scope": "marketplaceAttributes",
+      "pattern": "/^See (\\d+) more plugins?$/",
+      "replacement": "再显示 $1 个插件"
+    },
+    {
+      "scope": "marketplaceAttributes",
+      "pattern": "/^See more in Build with Google$/",
+      "replacement": "查看更多 Google 开发工具"
+    },
+    {
+      "scope": "marketplaceAttributes",
+      "pattern": "/^(\\d+) MCP servers? failed to start$/",
+      "replacement": "$1 个 MCP 服务器未能启动"
+    },
+    {
+      "scope": "uiAttributes",
+      "pattern": "/^No more older messages, showing (\\d+) of (\\d+)$/",
+      "replacement": "没有更早的消息，已显示 $1 条，共 $2 条"
+    },
+    {
+      "scope": "sidebar",
+      "pattern": "/^(\\d+)(mo|s|m|h|d|w|y)$/",
+      "replacement": "(_, value, unit) => {\n    const units = { s: '秒', m: '分钟', h: '小时', d: '天', w: '周', mo: '个月', y: '年' };\n    return `${value} ${units[unit]}前`;\n}"
     },
     {
       "scope": "native",
