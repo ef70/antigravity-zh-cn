@@ -686,6 +686,7 @@ const zhCnModelMenuText = {
     Unavailable: '不可用',
 };
 const zhCnButtonText = {
+    Quote: '引用',
     'Side Question': '旁支提问',
     'No more older messages': '没有更早的消息',
 };

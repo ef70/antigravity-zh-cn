@@ -1,13 +1,13 @@
 {
-  "patchVersion": "2026.11.23.2",
+  "patchVersion": "2026.11.23.3",
   "supportedVersions": [
     "2.34.0",
     "2.33.0",
     "2.29.0"
   ],
   "counts": {
-    "entries": 651,
-    "uniqueEnglish": 628,
+    "entries": 655,
+    "uniqueEnglish": 632,
     "dynamicRules": 44
   },
   "settingsRule": {
@@ -3142,6 +3142,11 @@
     },
     {
       "scope": "buttons",
+      "english": "Quote",
+      "chinese": "引用"
+    },
+    {
+      "scope": "buttons",
       "english": "Side Question",
       "chinese": "旁支提问"
     },
@@ -3177,8 +3182,23 @@
     },
     {
       "scope": "native",
+      "english": "Cut",
+      "chinese": "剪切"
+    },
+    {
+      "scope": "native",
       "english": "Copy",
       "chinese": "复制"
+    },
+    {
+      "scope": "native",
+      "english": "Paste",
+      "chinese": "粘贴"
+    },
+    {
+      "scope": "native",
+      "english": "Select All",
+      "chinese": "全选"
     },
     {
       "scope": "native",

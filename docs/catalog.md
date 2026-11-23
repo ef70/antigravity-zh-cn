@@ -1,6 +1,6 @@
 # 中文词条表
 
-本表由 npm run catalog 从汉化源码生成，共 651 条作用域词条。
+本表由 npm run catalog 从汉化源码生成，共 655 条作用域词条。
 
 | 作用域 | 英文 | 中文 |
 | --- | --- | --- |
@@ -629,6 +629,7 @@
 | modelMenu | Orchestrator | 编排器 |
 | modelMenu | Extra High | 极高 |
 | modelMenu | Unavailable | 不可用 |
+| buttons | Quote | 引用 |
 | buttons | Side Question | 旁支提问 |
 | buttons | No more older messages | 没有更早的消息 |
 | native | Rename | 重命名 |
@@ -636,7 +637,10 @@
 | native | Unpin | 取消置顶 |
 | native | Mark Unread | 标为未读 |
 | native | Mark Read | 标为已读 |
+| native | Cut | 剪切 |
 | native | Copy | 复制 |
+| native | Paste | 粘贴 |
+| native | Select All | 全选 |
 | native | Split | 拆分 |
 | native | Split Right | 向右拆分 |
 | native | Split Down | 向下拆分 |

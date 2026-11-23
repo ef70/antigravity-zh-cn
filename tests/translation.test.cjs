@@ -146,6 +146,8 @@ test('new interface rules respect route, control type and sidebar link boundarie
     assert.equal(display(text, 'Extra High'), 'Extra High');
     assert.equal(display(text, 'Side Question'), 'Side Question');
     assert.equal(display(new Element('button', root), 'Side Question'), '旁支提问');
+    assert.equal(display(new Element('button', root), 'Quote'), '引用');
+    assert.equal(display(new Element('p', root), 'Quote'), 'Quote');
 });
 
 test('context menus and plugin controls translate while raw connection errors stay intact', () => {
@@ -476,6 +478,8 @@ test('native context menus translate recursively without changing action metadat
 });
 
 test('native menu translation preserves unknown labels', () => {
+    assert.deepEqual(['Cut', 'Copy', 'Paste', 'Select All'].map(translateNativeContextMenuLabel),
+        ['剪切', '复制', '粘贴', '全选']);
     for (const label of ['constructor', 'firestore-rules-author', 'My Project', '']) {
         assert.equal(translateNativeContextMenuLabel(label), label);
     }
