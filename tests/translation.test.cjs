@@ -193,7 +193,7 @@ test('voice, accessibility, shortcut and project settings stay scoped', () => {
     const labels = {
         Voice: '音色', 'Not set': '未设置', Change: '更改', Chat: '对话',
         'Conversation Steps': '对话步骤', Verbose: '详细', Font: '字体',
-        'Chat Width': '对话宽度', Fill: '填满', Accessibility: '无障碍',
+        'Chat Layout': '对话布局', 'Chat Width': '对话宽度', Fill: '填满', Accessibility: '无障碍',
         'Screen Reader Mode': '屏幕阅读器模式',
         'Reopen Closed Tab': '重新打开已关闭的标签页',
         'Move Conversation Up': '上移对话', 'Move Conversation Down': '下移对话',

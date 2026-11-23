@@ -1,6 +1,6 @@
 # 中文词条表
 
-本表由 npm run catalog 从汉化源码生成，共 650 条作用域词条。
+本表由 npm run catalog 从汉化源码生成，共 651 条作用域词条。
 
 | 作用域 | 英文 | 中文 |
 | --- | --- | --- |
@@ -447,6 +447,7 @@
 | settings | Choose how much detail is shown during a conversation. | 选择对话过程中显示的详细程度。 |
 | settings | Verbose | 详细 |
 | settings | Font | 字体 |
+| settings | Chat Layout | 对话布局 |
 | settings | Chat Width | 对话宽度 |
 | settings | Fill | 填满 |
 | settings | Accessibility | 无障碍 |

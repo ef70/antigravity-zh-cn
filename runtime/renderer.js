@@ -445,6 +445,7 @@ const zhCnSettingsFragments = {
     'Choose how much detail is shown during a conversation.': '选择对话过程中显示的详细程度。',
     Verbose: '详细',
     Font: '字体',
+    'Chat Layout': '对话布局',
     'Chat Width': '对话宽度',
     Fill: '填满',
     Accessibility: '无障碍',

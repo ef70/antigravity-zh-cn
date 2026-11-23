@@ -1,13 +1,13 @@
 {
-  "patchVersion": "2026.11.23.1",
+  "patchVersion": "2026.11.23.2",
   "supportedVersions": [
     "2.34.0",
     "2.33.0",
     "2.29.0"
   ],
   "counts": {
-    "entries": 650,
-    "uniqueEnglish": 627,
+    "entries": 651,
+    "uniqueEnglish": 628,
     "dynamicRules": 44
   },
   "settingsRule": {
@@ -2229,6 +2229,11 @@
       "scope": "settings",
       "english": "Font",
       "chinese": "字体"
+    },
+    {
+      "scope": "settings",
+      "english": "Chat Layout",
+      "chinese": "对话布局"
     },
     {
       "scope": "settings",
