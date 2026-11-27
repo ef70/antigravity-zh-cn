@@ -1,5 +1,5 @@
 {
-  "patchVersion": "2026.11.27.1",
+  "patchVersion": "2026.11.27.2",
   "supportedVersions": [
     "2.35.2",
     "2.34.0",
@@ -7,9 +7,9 @@
     "2.29.0"
   ],
   "counts": {
-    "entries": 663,
-    "uniqueEnglish": 639,
-    "dynamicRules": 46
+    "entries": 706,
+    "uniqueEnglish": 678,
+    "dynamicRules": 50
   },
   "settingsRule": {
     "pattern": "/^(\\d+) projects?$/",
@@ -1888,6 +1888,151 @@
     },
     {
       "scope": "settings",
+      "english": "Back",
+      "chinese": "返回"
+    },
+    {
+      "scope": "settings",
+      "english": "Add",
+      "chinese": "添加"
+    },
+    {
+      "scope": "settings",
+      "english": "This Computer",
+      "chinese": "本机"
+    },
+    {
+      "scope": "settings",
+      "english": "Tool permissions",
+      "chinese": "工具权限"
+    },
+    {
+      "scope": "settings",
+      "english": "Network access rules",
+      "chinese": "网络访问规则"
+    },
+    {
+      "scope": "settings",
+      "english": "File access rules",
+      "chinese": "文件访问规则"
+    },
+    {
+      "scope": "settings",
+      "english": "Terminal commands",
+      "chinese": "终端命令"
+    },
+    {
+      "scope": "settings",
+      "english": "Plugin permissions",
+      "chinese": "插件权限"
+    },
+    {
+      "scope": "settings",
+      "english": "Changes plugins can make without asking.",
+      "chinese": "插件无需确认即可进行的更改。"
+    },
+    {
+      "scope": "settings",
+      "english": "Modify permissions for file and terminal tools.",
+      "chinese": "修改文件和终端工具的权限。"
+    },
+    {
+      "scope": "settings",
+      "english": "File reads",
+      "chinese": "文件读取"
+    },
+    {
+      "scope": "settings",
+      "english": "File writes",
+      "chinese": "文件写入"
+    },
+    {
+      "scope": "settings",
+      "english": "Allow/deny agent read access to specific files or directories.",
+      "chinese": "允许或禁止智能体读取指定文件或目录。"
+    },
+    {
+      "scope": "settings",
+      "english": "Allow/deny agent write access to specific files or directories.",
+      "chinese": "允许或禁止智能体写入指定文件或目录。"
+    },
+    {
+      "scope": "settings",
+      "english": "Prevent sleep",
+      "chinese": "防止休眠"
+    },
+    {
+      "scope": "settings",
+      "english": "Keep in menu bar",
+      "chinese": "保留在菜单栏"
+    },
+    {
+      "scope": "settings",
+      "english": "Device name",
+      "chinese": "设备名称"
+    },
+    {
+      "scope": "settings",
+      "english": "Notification settings",
+      "chinese": "通知设置"
+    },
+    {
+      "scope": "settings",
+      "english": "Font size",
+      "chinese": "字号"
+    },
+    {
+      "scope": "settings",
+      "english": "Conversation width",
+      "chinese": "对话宽度"
+    },
+    {
+      "scope": "settings",
+      "english": "Screen reader mode",
+      "chinese": "屏幕阅读器模式"
+    },
+    {
+      "scope": "settings",
+      "english": "Enable notifications for agent",
+      "chinese": "启用智能体通知"
+    },
+    {
+      "scope": "settings",
+      "english": "Enable sounds for agent",
+      "chinese": "启用智能体提示音"
+    },
+    {
+      "scope": "settings",
+      "english": "Your plan:",
+      "chinese": "你的套餐："
+    },
+    {
+      "scope": "settings",
+      "english": "Enable AI credit overages",
+      "chinese": "启用 AI 点数超额使用"
+    },
+    {
+      "scope": "settings",
+      "english": "Open links in",
+      "chinese": "链接打开方式"
+    },
+    {
+      "scope": "settings",
+      "english": "Download location",
+      "chinese": "下载位置"
+    },
+    {
+      "scope": "settings",
+      "english": "Browsing history",
+      "chinese": "浏览历史"
+    },
+    {
+      "scope": "settings",
+      "english": "Browser actuation rules",
+      "chinese": "浏览器执行规则"
+    },
+    {
+      "scope": "settings",
       "english": "Permission preset",
       "chinese": "权限预设"
     },
@@ -2918,6 +3063,21 @@
     },
     {
       "scope": "automation",
+      "english": "Required",
+      "chinese": "必填"
+    },
+    {
+      "scope": "automation",
+      "english": "Required to create: title, instructions",
+      "chinese": "请填写标题和任务指令后再创建"
+    },
+    {
+      "scope": "automation",
+      "english": "How often",
+      "chinese": "运行频率"
+    },
+    {
+      "scope": "automation",
       "english": "Add automation",
       "chinese": "新建自动化任务"
     },
@@ -3142,6 +3302,31 @@
       "chinese": "不可用"
     },
     {
+      "scope": "runLocation",
+      "english": "This Computer",
+      "chinese": "本机"
+    },
+    {
+      "scope": "runLocation",
+      "english": "Remote",
+      "chinese": "远程"
+    },
+    {
+      "scope": "runLocation",
+      "english": "Runs on this machine",
+      "chinese": "在这台电脑上运行"
+    },
+    {
+      "scope": "runLocation",
+      "english": "Runs in a cloud environment",
+      "chinese": "在云端环境中运行"
+    },
+    {
+      "scope": "buttons",
+      "english": "New tab",
+      "chinese": "新建标签页"
+    },
+    {
       "scope": "buttons",
       "english": "Quote",
       "chinese": "引用"
@@ -3210,6 +3395,36 @@
       "scope": "native",
       "english": "Unpin",
       "chinese": "取消置顶"
+    },
+    {
+      "scope": "native",
+      "english": "Pin Tab",
+      "chinese": "固定标签页"
+    },
+    {
+      "scope": "native",
+      "english": "Unpin Tab",
+      "chinese": "取消固定标签页"
+    },
+    {
+      "scope": "native",
+      "english": "Close Tab",
+      "chinese": "关闭标签页"
+    },
+    {
+      "scope": "native",
+      "english": "Close Other Tabs",
+      "chinese": "关闭其他标签页"
+    },
+    {
+      "scope": "native",
+      "english": "Close Tabs to the Left",
+      "chinese": "关闭左侧标签页"
+    },
+    {
+      "scope": "native",
+      "english": "Close Tabs to the Right",
+      "chinese": "关闭右侧标签页"
     },
     {
       "scope": "native",
@@ -3532,6 +3747,26 @@
       "scope": "marketplaceAttributes",
       "pattern": "/^(\\d+) MCP servers? failed to start$/",
       "replacement": "$1 个 MCP 服务器未能启动"
+    },
+    {
+      "scope": "uiAttributes",
+      "pattern": "/^Where the agent runs, current: This Computer$/",
+      "replacement": "智能体运行位置，当前：本机"
+    },
+    {
+      "scope": "uiAttributes",
+      "pattern": "/^Where the agent runs, current: Remote$/",
+      "replacement": "智能体运行位置，当前：远程"
+    },
+    {
+      "scope": "uiAttributes",
+      "pattern": "/^Pin (.+)$/",
+      "replacement": "(label, target) => Object.hasOwn(zhCnText, label) ? zhCnText[label] : `固定 ${target}`"
+    },
+    {
+      "scope": "uiAttributes",
+      "pattern": "/^Unpin (.+)$/",
+      "replacement": "(label, target) => Object.hasOwn(zhCnText, label) ? zhCnText[label] : `取消固定 ${target}`"
     },
     {
       "scope": "uiAttributes",

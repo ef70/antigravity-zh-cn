@@ -376,6 +376,35 @@ const zhCnText = {
     'Configure allowed and denied URLs for browser actuation.': '配置允许或拒绝执行浏览器操作的网址。',
 };
 const zhCnSettingsFragments = {
+    Back: '返回',
+    Add: '添加',
+    'This Computer': '本机',
+    'Tool permissions': '工具权限',
+    'Network access rules': '网络访问规则',
+    'File access rules': '文件访问规则',
+    'Terminal commands': '终端命令',
+    'Plugin permissions': '插件权限',
+    'Changes plugins can make without asking.': '插件无需确认即可进行的更改。',
+    'Modify permissions for file and terminal tools.': '修改文件和终端工具的权限。',
+    'File reads': '文件读取',
+    'File writes': '文件写入',
+    'Allow/deny agent read access to specific files or directories.': '允许或禁止智能体读取指定文件或目录。',
+    'Allow/deny agent write access to specific files or directories.': '允许或禁止智能体写入指定文件或目录。',
+    'Prevent sleep': '防止休眠',
+    'Keep in menu bar': '保留在菜单栏',
+    'Device name': '设备名称',
+    'Notification settings': '通知设置',
+    'Font size': '字号',
+    'Conversation width': '对话宽度',
+    'Screen reader mode': '屏幕阅读器模式',
+    'Enable notifications for agent': '启用智能体通知',
+    'Enable sounds for agent': '启用智能体提示音',
+    'Your plan:': '你的套餐：',
+    'Enable AI credit overages': '启用 AI 点数超额使用',
+    'Open links in': '链接打开方式',
+    'Download location': '下载位置',
+    'Browsing history': '浏览历史',
+    'Browser actuation rules': '浏览器执行规则',
     'Permission preset': '权限预设',
     'Search shortcuts': '搜索快捷键',
     'Search shortcuts...': '搜索快捷键……',
@@ -621,6 +650,9 @@ const zhCnPatterns = [
     [/^You have used some of your 5-hour limit, it will fully refresh in (\d+) hours?, (\d+) minutes?\.$/, '你已使用部分五小时额度，将在 $1 小时 $2 分钟后完全恢复。'],
 ];
 const zhCnAutomationText = {
+    Required: '必填',
+    'Required to create: title, instructions': '请填写标题和任务指令后再创建',
+    'How often': '运行频率',
     'Add automation': '新建自动化任务',
     New: '新建',
     Create: '创建',
@@ -685,7 +717,14 @@ const zhCnModelMenuText = {
     'Extra High': '极高',
     Unavailable: '不可用',
 };
+const zhCnRunLocationText = {
+    'This Computer': '本机',
+    Remote: '远程',
+    'Runs on this machine': '在这台电脑上运行',
+    'Runs in a cloud environment': '在云端环境中运行',
+};
 const zhCnButtonText = {
+    'New tab': '新建标签页',
     Quote: '引用',
     'Side Question': '旁支提问',
     'No more older messages': '没有更早的消息',
@@ -705,6 +744,10 @@ const zhCnApprovalPatterns = [
     [/^The command clones an unverified third-party GitHub repository into ([^\r\n]+), mutating persistent host\/application plugin configuration outside the workspace\.$/, '此命令会将一个未经验证的第三方 GitHub 仓库克隆到 $1，并修改工作区之外的持久化主机或应用插件配置。'],
 ];
 const zhCnUiAttributePatterns = [
+    [/^Where the agent runs, current: This Computer$/, '智能体运行位置，当前：本机'],
+    [/^Where the agent runs, current: Remote$/, '智能体运行位置，当前：远程'],
+    [/^Pin (.+)$/, (label, target) => Object.hasOwn(zhCnText, label) ? zhCnText[label] : `固定 ${target}`],
+    [/^Unpin (.+)$/, (label, target) => Object.hasOwn(zhCnText, label) ? zhCnText[label] : `取消固定 ${target}`],
     [/^No more older messages, showing (\d+) of (\d+)$/, '没有更早的消息，已显示 $1 条，共 $2 条'],
 ];
 const zhCnSettingsPatterns = [
@@ -792,13 +835,24 @@ function translateUiValue(value, element, attribute = false) {
     const sidebar = element.closest?.('[aria-label="Sidebar"]');
     let translated = translateApprovalValue(value, element);
     if (translated !== value) return translated;
+    if (Object.hasOwn(zhCnRunLocationText, value.trim())) {
+        const menuItem = element.closest?.('[role="menuitem"], [role="menuitemradio"]');
+        const trigger = element.closest?.('[aria-label="Where the agent runs, current: This Computer"], [aria-label="Where the agent runs, current: Remote"], '
+            + '[aria-label="智能体运行位置，当前：本机"], [aria-label="智能体运行位置，当前：远程"]');
+        const itemText = menuItem?.textContent ?? '';
+        if (trigger || ['Runs on this machine', 'Runs in a cloud environment'].some(
+            key => itemText.includes(key) || itemText.includes(zhCnRunLocationText[key]),
+        )) {
+            return translateScopedValue(value, zhCnRunLocationText);
+        }
+    }
     if (attribute) translated = translateScopedValue(value, zhCnUiAttributes, zhCnUiAttributePatterns);
     if (translated !== value) return translated;
     if (!attribute && sidebar && !element.closest?.('a, button')) {
         translated = translateScopedValue(value, {}, [zhCnSidebarAgePattern]);
     } else if (!sidebar && !allowSettingsFragments && pathname === '/sidecars' && Object.hasOwn(zhCnAutomationText, value.trim())) {
         const label = value.trim();
-        if (label === 'Add automation' || (label === 'New' && element.closest?.('button'))
+        if (['Add automation', 'Required', 'Required to create: title, instructions', 'How often'].includes(label) || (label === 'New' && element.closest?.('button'))
             || element.ownerDocument.querySelector('input[placeholder="Untitled"], input[placeholder="未命名"]')) {
             translated = translateScopedValue(value, zhCnAutomationText);
         }

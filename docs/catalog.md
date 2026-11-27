@@ -1,6 +1,6 @@
 # 中文词条表
 
-本表由 npm run catalog 从汉化源码生成，共 663 条作用域词条。
+本表由 npm run catalog 从汉化源码生成，共 706 条作用域词条。
 
 | 作用域 | 英文 | 中文 |
 | --- | --- | --- |
@@ -378,6 +378,35 @@
 | global | Configure allowed commands outside the sandbox. | 配置允许在沙盒外执行的命令。 |
 | global | Configure allowed and denied URLs for browser actions. | 配置允许或拒绝执行浏览器操作的网址。 |
 | global | Configure allowed and denied URLs for browser actuation. | 配置允许或拒绝执行浏览器操作的网址。 |
+| settings | Back | 返回 |
+| settings | Add | 添加 |
+| settings | This Computer | 本机 |
+| settings | Tool permissions | 工具权限 |
+| settings | Network access rules | 网络访问规则 |
+| settings | File access rules | 文件访问规则 |
+| settings | Terminal commands | 终端命令 |
+| settings | Plugin permissions | 插件权限 |
+| settings | Changes plugins can make without asking. | 插件无需确认即可进行的更改。 |
+| settings | Modify permissions for file and terminal tools. | 修改文件和终端工具的权限。 |
+| settings | File reads | 文件读取 |
+| settings | File writes | 文件写入 |
+| settings | Allow/deny agent read access to specific files or directories. | 允许或禁止智能体读取指定文件或目录。 |
+| settings | Allow/deny agent write access to specific files or directories. | 允许或禁止智能体写入指定文件或目录。 |
+| settings | Prevent sleep | 防止休眠 |
+| settings | Keep in menu bar | 保留在菜单栏 |
+| settings | Device name | 设备名称 |
+| settings | Notification settings | 通知设置 |
+| settings | Font size | 字号 |
+| settings | Conversation width | 对话宽度 |
+| settings | Screen reader mode | 屏幕阅读器模式 |
+| settings | Enable notifications for agent | 启用智能体通知 |
+| settings | Enable sounds for agent | 启用智能体提示音 |
+| settings | Your plan: | 你的套餐： |
+| settings | Enable AI credit overages | 启用 AI 点数超额使用 |
+| settings | Open links in | 链接打开方式 |
+| settings | Download location | 下载位置 |
+| settings | Browsing history | 浏览历史 |
+| settings | Browser actuation rules | 浏览器执行规则 |
 | settings | Permission preset | 权限预设 |
 | settings | Search shortcuts | 搜索快捷键 |
 | settings | Search shortcuts... | 搜索快捷键…… |
@@ -584,6 +613,9 @@
 | settings | Visit | 前往 |
 | settings | Legal Help | 法律帮助 |
 | settings | to ask for content changes for legal reasons. | 申请因法律原因修改内容。 |
+| automation | Required | 必填 |
+| automation | Required to create: title, instructions | 请填写标题和任务指令后再创建 |
+| automation | How often | 运行频率 |
 | automation | Add automation | 新建自动化任务 |
 | automation | New | 新建 |
 | automation | Create | 创建 |
@@ -629,6 +661,11 @@
 | modelMenu | Orchestrator | 编排器 |
 | modelMenu | Extra High | 极高 |
 | modelMenu | Unavailable | 不可用 |
+| runLocation | This Computer | 本机 |
+| runLocation | Remote | 远程 |
+| runLocation | Runs on this machine | 在这台电脑上运行 |
+| runLocation | Runs in a cloud environment | 在云端环境中运行 |
+| buttons | New tab | 新建标签页 |
 | buttons | Quote | 引用 |
 | buttons | Side Question | 旁支提问 |
 | buttons | No more older messages | 没有更早的消息 |
@@ -643,6 +680,12 @@
 | native | Rename | 重命名 |
 | native | Pin | 置顶 |
 | native | Unpin | 取消置顶 |
+| native | Pin Tab | 固定标签页 |
+| native | Unpin Tab | 取消固定标签页 |
+| native | Close Tab | 关闭标签页 |
+| native | Close Other Tabs | 关闭其他标签页 |
+| native | Close Tabs to the Left | 关闭左侧标签页 |
+| native | Close Tabs to the Right | 关闭右侧标签页 |
 | native | Mark Unread | 标为未读 |
 | native | Mark Read | 标为已读 |
 | native | Cut | 剪切 |

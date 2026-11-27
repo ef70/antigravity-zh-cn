@@ -169,7 +169,13 @@ test('new interface rules respect route, control type and sidebar link boundarie
     assert.equal(display(text, 'Trigger'), '触发方式');
     editing = false;
     assert.equal(display(text, 'Trigger'), 'Trigger');
+    assert.equal(display(text, 'Required'), '必填');
+    assert.equal(display(text, 'Required to create: title, instructions'), '请填写标题和任务指令后再创建');
+    const frequency = new Element('button', root, { 'aria-label': 'How often' });
+    translateNode(frequency);
+    assert.equal(frequency.getAttribute('aria-label'), '运行频率');
     root.ownerDocument.location.pathname = '/customizations/installed';
+    assert.equal(display(text, 'Required'), 'Required');
     assert.equal(display(text, 'Create'), 'Create');
     assert.equal(display(new Element('button', root), 'Create'), '创建');
     const plugin = new Element('button', root, { 'aria-label': 'More actions for Google Drive' });
@@ -187,6 +193,38 @@ test('new interface rules respect route, control type and sidebar link boundarie
     assert.equal(display(new Element('button', root), 'Side Question'), '旁支提问');
     assert.equal(display(new Element('button', root), 'Quote'), '引用');
     assert.equal(display(new Element('p', root), 'Quote'), 'Quote');
+});
+
+test('run location translates the selector and menu without rewriting ordinary text', () => {
+    const addText = (element, nodeValue) => {
+        const node = { nodeType: 3, parentElement: element, nodeValue };
+        element.childNodes.push(node);
+        return node;
+    };
+    const trigger = new Element('button', null, { 'aria-label': 'Where the agent runs, current: This Computer' });
+    addText(trigger, 'This Computer');
+    translateNode(trigger);
+    assert.equal(trigger.getAttribute('aria-label'), '智能体运行位置，当前：本机');
+    assert.equal(trigger.textContent, '本机');
+    const option = new Element('div', null, { role: 'menuitem' });
+    const remote = addText(option, 'Remote');
+    const description = addText(option, 'Runs in a cloud environment');
+    translateNode(option);
+    assert.equal(remote.nodeValue, '远程');
+    assert.equal(description.nodeValue, '在云端环境中运行');
+    const message = new Element('p');
+    addText(message, 'This Computer');
+    translateNode(message);
+    assert.equal(message.textContent, 'This Computer');
+});
+
+test('pin tooltips keep the more specific conversation wording and preserve tab names', () => {
+    const conversation = new Element('button', null, { 'aria-label': 'Pin conversation' });
+    const tab = new Element('button', null, { 'aria-label': 'Unpin Example Panel' });
+    translateNode(conversation);
+    translateNode(tab);
+    assert.equal(conversation.getAttribute('aria-label'), '置顶对话');
+    assert.equal(tab.getAttribute('aria-label'), '取消固定 Example Panel');
 });
 
 test('context menus and plugin controls translate while raw connection errors stay intact', () => {
@@ -519,6 +557,8 @@ test('native context menus translate recursively without changing action metadat
 test('native menu translation preserves unknown labels', () => {
     assert.deepEqual(['Cut', 'Copy', 'Paste', 'Select All'].map(translateNativeContextMenuLabel),
         ['剪切', '复制', '粘贴', '全选']);
+    assert.deepEqual(['Pin Tab', 'Unpin Tab', 'Close Tab', 'Close Other Tabs', 'Close Tabs to the Left', 'Close Tabs to the Right'].map(translateNativeContextMenuLabel),
+        ['固定标签页', '取消固定标签页', '关闭标签页', '关闭其他标签页', '关闭左侧标签页', '关闭右侧标签页']);
     for (const label of ['constructor', 'firestore-rules-author', 'My Project', '']) {
         assert.equal(translateNativeContextMenuLabel(label), label);
     }

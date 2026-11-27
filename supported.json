@@ -1,5 +1,5 @@
 {
-  "patchVersion": "2026.11.27.1",
+  "patchVersion": "2026.11.27.2",
   "versions": {
     "2.35.2": {
       "original": {
@@ -8,7 +8,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "8e7978b8ec107f8a76f0ba2bf439d2ba582d82316c65f608df4e91e4f0fcbb88",
+        "preload.js": "fe272cce007f1297402503020e6669cd453d85ee8f55b94bb465f0b3143265f0",
         "ipcHandlers.js": "b7316f9ebe6a827f3d17fae8a92c17d1847ab7857e6cbeaffb817da8077ad4d5",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
@@ -20,7 +20,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "53b099333238a4a819fb8cdb4e9d6cf6e9d6da33891f40fcfd89872157af69d4",
+        "preload.js": "4347a727fb209ef2abceadf8f3b2d31bda7ce3b2610004903a6ec8ae0f389c04",
         "ipcHandlers.js": "d9d3eb2218f87c7fa574cd8fc178fcdacca804bc889e1ccaf135ab6c671b732d",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
@@ -32,7 +32,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "08a1408fa4d62d498a27bb44fa5a8ae5dd6290012e72652cd50b6aa54bb2450a",
+        "preload.js": "34ab6013f4d8d83f4f5901705cab628d48726b5aa8d4e8fe7eac3b565a635ddc",
         "ipcHandlers.js": "25fcac0609123dc736b129b3a443f8fa05dbc4f1ce19a21d161009cd823150d2",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
@@ -44,7 +44,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "f857afee23ebc35665893bb999c18caddba8704fa1b7d2a550c9ec7ff6820f86",
+        "preload.js": "5648738d83bd502a267ba6d7b38c532f6a4139bc45686187aa49ebb493114b79",
         "ipcHandlers.js": "d811156f5184f30c5bdfad7277d46a4f769a80c86f3d69fcd38d90bb783c79e3",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
