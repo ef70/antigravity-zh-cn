@@ -1,6 +1,6 @@
 # 中文词条表
 
-本表由 npm run catalog 从汉化源码生成，共 655 条作用域词条。
+本表由 npm run catalog 从汉化源码生成，共 663 条作用域词条。
 
 | 作用域 | 英文 | 中文 |
 | --- | --- | --- |
@@ -632,6 +632,14 @@
 | buttons | Quote | 引用 |
 | buttons | Side Question | 旁支提问 |
 | buttons | No more older messages | 没有更早的消息 |
+| approval | Yes, allow this time | 是，仅允许本次 |
+| approval | Yes, and always allow in this conversation | 是，在此对话中始终允许 |
+| approval | Yes, and always allow | 是，始终允许 |
+| approval | No (tell the agent what to do instead) | 不允许（告诉智能体改怎么做） |
+| approval | No | 不允许 |
+| approval | (tell the agent what to do instead) | （告诉智能体改怎么做） |
+| approval | Skip | 跳过 |
+| approval | Submit | 提交 |
 | native | Rename | 重命名 |
 | native | Pin | 置顶 |
 | native | Unpin | 取消置顶 |

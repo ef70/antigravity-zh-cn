@@ -690,6 +690,20 @@ const zhCnButtonText = {
     'Side Question': '旁支提问',
     'No more older messages': '没有更早的消息',
 };
+const zhCnApprovalText = {
+    'Yes, allow this time': '是，仅允许本次',
+    'Yes, and always allow in this conversation': '是，在此对话中始终允许',
+    'Yes, and always allow': '是，始终允许',
+    'No (tell the agent what to do instead)': '不允许（告诉智能体改怎么做）',
+    No: '不允许',
+    '(tell the agent what to do instead)': '（告诉智能体改怎么做）',
+    Skip: '跳过',
+    Submit: '提交',
+};
+const zhCnApprovalPatterns = [
+    [/^Allow clone ([\w.-]+) plugin repository\?$/, '是否允许克隆 $1 插件仓库？'],
+    [/^The command clones an unverified third-party GitHub repository into ([^\r\n]+), mutating persistent host\/application plugin configuration outside the workspace\.$/, '此命令会将一个未经验证的第三方 GitHub 仓库克隆到 $1，并修改工作区之外的持久化主机或应用插件配置。'],
+];
 const zhCnUiAttributePatterns = [
     [/^No more older messages, showing (\d+) of (\d+)$/, '没有更早的消息，已显示 $1 条，共 $2 条'],
 ];
@@ -746,11 +760,38 @@ function translateScopedValue(value, entries, patterns = []) {
     }
     return result === trimmed ? value : value.replace(trimmed, () => result);
 }
+function translateApprovalValue(value, element) {
+    const label = value.trim();
+    if (!Object.hasOwn(zhCnApprovalText, label) && !zhCnApprovalPatterns.some(([pattern]) => pattern.test(label))) {
+        return value;
+    }
+    const control = element.closest?.('button, [role="button"], [role="radio"], [role="option"]');
+    if (control && !['No', 'Skip', 'Submit'].includes(label) && Object.hasOwn(zhCnApprovalText, label)) {
+        return translateScopedValue(value, zhCnApprovalText);
+    }
+    // Recognize the card by its fixed choices, before or after localization.
+    for (let parent = element.parentElement, depth = 0; parent && depth < 6; parent = parent.parentElement, depth++) {
+        if (['BODY', 'MAIN', 'HTML'].includes(parent.tagName) || parent.getAttribute('id') === 'root') break;
+        const text = parent.textContent || '';
+        if (['Yes, allow this time', 'Yes, and always allow in this conversation'].every(
+            key => text.includes(key) || text.includes(zhCnApprovalText[key]),
+        )) {
+            if (['No', 'Skip', 'Submit'].includes(label) && !control) return value;
+            if (label === 'No' && !(
+                control.textContent?.includes('(tell the agent what to do instead)')
+                || control.textContent?.includes(zhCnApprovalText['(tell the agent what to do instead)'])
+            )) return value;
+            return translateScopedValue(value, zhCnApprovalText, zhCnApprovalPatterns);
+        }
+    }
+    return value;
+}
 function translateUiValue(value, element, attribute = false) {
     const allowSettingsFragments = !!element.closest?.('[role="dialog"]');
     const pathname = element.ownerDocument?.location?.pathname;
     const sidebar = element.closest?.('[aria-label="Sidebar"]');
-    let translated = value;
+    let translated = translateApprovalValue(value, element);
+    if (translated !== value) return translated;
     if (attribute) translated = translateScopedValue(value, zhCnUiAttributes, zhCnUiAttributePatterns);
     if (translated !== value) return translated;
     if (!attribute && sidebar && !element.closest?.('a, button')) {

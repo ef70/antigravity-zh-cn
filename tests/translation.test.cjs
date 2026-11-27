@@ -45,7 +45,46 @@ class Element {
     }
     getAttribute(name) { return this.attributes[name]; }
     setAttribute(name, value) { this.attributes[name] = value; }
+    get textContent() { return this.childNodes.map(child => child.textContent ?? child.nodeValue).join(''); }
 }
+
+test('permission card localizes choices and preserves risk wording, paths, and unrelated text', () => {
+    const root = new Element('main');
+    const card = new Element('section', root);
+    root.childNodes.push(card);
+    const add = (parent, tag, ...labels) => {
+        const child = new Element(tag, parent);
+        child.childNodes = labels.map(nodeValue => ({ nodeType: 3, parentElement: child, nodeValue }));
+        parent.childNodes.push(child);
+        return child;
+    };
+    const title = add(card, 'h2', 'Allow clone sample-plugin plugin repository?');
+    const folder = 'C:\\Users\\example\\plugins\\sample-plugin';
+    const description = add(card, 'p', `The command clones an unverified third-party GitHub repository into ${folder}, mutating persistent host/application plugin configuration outside the workspace.`);
+    const once = add(card, 'button', 'Yes, allow this time');
+    const conversation = add(card, 'button', 'Yes, and always allow in this conversation');
+    const always = add(card, 'button', 'Yes, and always allow');
+    const decline = add(card, 'button', 'No');
+    add(decline, 'span', '(tell the agent what to do instead)');
+    const skip = add(card, 'button', 'Skip');
+    const submit = add(card, 'button', 'Submit');
+    const other = add(root, 'button', 'Skip');
+    const chat = add(root, 'p', 'Yes, allow this time');
+    const unknown = add(card, 'p', 'A different permission warning.');
+    translateNode(root);
+    translateNode(root);
+    assert.equal(title.textContent, '是否允许克隆 sample-plugin 插件仓库？');
+    assert.equal(description.textContent, `此命令会将一个未经验证的第三方 GitHub 仓库克隆到 ${folder}，并修改工作区之外的持久化主机或应用插件配置。`);
+    assert.equal(once.textContent, '是，仅允许本次');
+    assert.equal(conversation.textContent, '是，在此对话中始终允许');
+    assert.equal(always.textContent, '是，始终允许');
+    assert.equal(decline.textContent, '不允许（告诉智能体改怎么做）');
+    assert.equal(skip.textContent, '跳过');
+    assert.equal(submit.textContent, '提交');
+    assert.equal(other.textContent, 'Skip');
+    assert.equal(chat.textContent, 'Yes, allow this time');
+    assert.equal(unknown.textContent, 'A different permission warning.');
+});
 
 test('new settings entries are scoped to dialogs and preserve whitespace', () => {
     for (const [english, chinese] of Object.entries(zhCnSettingsFragments)) {

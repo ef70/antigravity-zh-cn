@@ -1,6 +1,18 @@
 {
-  "patchVersion": "2026.11.23.3",
+  "patchVersion": "2026.11.27.1",
   "versions": {
+    "2.35.2": {
+      "original": {
+        "preload.js": "2973a6bfd3154fd20c58cbb6643dbf0a5e0cc4fd8a5894c4496f3db5c6231475",
+        "ipcHandlers.js": "cd1c04e713e7e55312b95a381f54b03706c549d3a893bfcc3d1d24b22a09f3bd",
+        "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
+      },
+      "patched": {
+        "preload.js": "8e7978b8ec107f8a76f0ba2bf439d2ba582d82316c65f608df4e91e4f0fcbb88",
+        "ipcHandlers.js": "b7316f9ebe6a827f3d17fae8a92c17d1847ab7857e6cbeaffb817da8077ad4d5",
+        "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
+      }
+    },
     "2.34.0": {
       "original": {
         "preload.js": "d9641f990029ef095b6e93e76579b59de67c1ba56ba4ce84cb0429ecc9b6556a",
@@ -8,7 +20,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "743e78ee039ab7056e1bfc5a70dabcc5b5e7d7e72f1efe881515df2956f36ea6",
+        "preload.js": "53b099333238a4a819fb8cdb4e9d6cf6e9d6da33891f40fcfd89872157af69d4",
         "ipcHandlers.js": "d9d3eb2218f87c7fa574cd8fc178fcdacca804bc889e1ccaf135ab6c671b732d",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
@@ -20,7 +32,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "d7c544ede4e30a5c68cfbe447a333e27ace1e848e6efaf65ac5e79079b8d5922",
+        "preload.js": "08a1408fa4d62d498a27bb44fa5a8ae5dd6290012e72652cd50b6aa54bb2450a",
         "ipcHandlers.js": "25fcac0609123dc736b129b3a443f8fa05dbc4f1ce19a21d161009cd823150d2",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }
@@ -32,7 +44,7 @@
         "tray.js": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135"
       },
       "patched": {
-        "preload.js": "cdeb82f05b19916e8e31945a7bf9e92807c79bf39ab2c9e10cebb617cd44c1ea",
+        "preload.js": "f857afee23ebc35665893bb999c18caddba8704fa1b7d2a550c9ec7ff6820f86",
         "ipcHandlers.js": "d811156f5184f30c5bdfad7277d46a4f769a80c86f3d69fcd38d90bb783c79e3",
         "tray.js": "f1413becfc7040edbf43d0ec36de43bcbc6dd2a06be05dfbfa4ca81af5747bd2"
       }

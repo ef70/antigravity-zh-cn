@@ -1,14 +1,15 @@
 {
-  "patchVersion": "2026.11.23.3",
+  "patchVersion": "2026.11.27.1",
   "supportedVersions": [
+    "2.35.2",
     "2.34.0",
     "2.33.0",
     "2.29.0"
   ],
   "counts": {
-    "entries": 655,
-    "uniqueEnglish": 632,
-    "dynamicRules": 44
+    "entries": 663,
+    "uniqueEnglish": 639,
+    "dynamicRules": 46
   },
   "settingsRule": {
     "pattern": "/^(\\d+) projects?$/",
@@ -3156,6 +3157,46 @@
       "chinese": "没有更早的消息"
     },
     {
+      "scope": "approval",
+      "english": "Yes, allow this time",
+      "chinese": "是，仅允许本次"
+    },
+    {
+      "scope": "approval",
+      "english": "Yes, and always allow in this conversation",
+      "chinese": "是，在此对话中始终允许"
+    },
+    {
+      "scope": "approval",
+      "english": "Yes, and always allow",
+      "chinese": "是，始终允许"
+    },
+    {
+      "scope": "approval",
+      "english": "No (tell the agent what to do instead)",
+      "chinese": "不允许（告诉智能体改怎么做）"
+    },
+    {
+      "scope": "approval",
+      "english": "No",
+      "chinese": "不允许"
+    },
+    {
+      "scope": "approval",
+      "english": "(tell the agent what to do instead)",
+      "chinese": "（告诉智能体改怎么做）"
+    },
+    {
+      "scope": "approval",
+      "english": "Skip",
+      "chinese": "跳过"
+    },
+    {
+      "scope": "approval",
+      "english": "Submit",
+      "chinese": "提交"
+    },
+    {
       "scope": "native",
       "english": "Rename",
       "chinese": "重命名"
@@ -3496,6 +3537,16 @@
       "scope": "uiAttributes",
       "pattern": "/^No more older messages, showing (\\d+) of (\\d+)$/",
       "replacement": "没有更早的消息，已显示 $1 条，共 $2 条"
+    },
+    {
+      "scope": "approval",
+      "pattern": "/^Allow clone ([\\w.-]+) plugin repository\\?$/",
+      "replacement": "是否允许克隆 $1 插件仓库？"
+    },
+    {
+      "scope": "approval",
+      "pattern": "/^The command clones an unverified third-party GitHub repository into ([^\\r\\n]+), mutating persistent host\\/application plugin configuration outside the workspace\\.$/",
+      "replacement": "此命令会将一个未经验证的第三方 GitHub 仓库克隆到 $1，并修改工作区之外的持久化主机或应用插件配置。"
     },
     {
       "scope": "sidebar",
