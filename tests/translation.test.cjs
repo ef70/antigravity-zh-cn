@@ -99,6 +99,24 @@ test('feedback account translation preserves the dynamic address', () => {
     assert.equal(translateString('Send feedback as user@example.test', true), '\u4ee5 user@example.test \u53d1\u9001\u53cd\u9988');
 });
 
+test('advanced settings translate permission labels without changing rule values or update state', () => {
+    const dialog = new Element('div', null, { role: 'dialog' });
+    for (const [label, translated] of [
+        ['Allow', '允许'], ['Ask', '询问'], ['Deny', '拒绝'], ['Remove', '移除'],
+        ['Automatic check for updates', '自动检查更新'],
+    ]) {
+        const control = new Element('button', dialog, { 'aria-label': label, 'aria-checked': 'true', value: label });
+        const node = { nodeType: 3, parentElement: control, nodeValue: label };
+        control.childNodes.push(node);
+        translateNode(control);
+        assert.equal(node.nodeValue, translated);
+        assert.equal(control.getAttribute('aria-label'), translated);
+        assert.equal(control.getAttribute('value'), label);
+        assert.equal(control.getAttribute('aria-checked'), 'true');
+        assert.equal(translateString(label), label);
+    }
+});
+
 test('general permissions and shortcut labels translate without changing key chords', () => {
     const dialog = new Element('div', null, { role: 'dialog' });
     for (const [label, expected, key] of [
